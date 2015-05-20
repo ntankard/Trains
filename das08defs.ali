@@ -1,0 +1,50 @@
+V "GNAT Lib v2012"
+A -gnatA
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U das08defs%s		das08defs.ads		830b4b4c NE OO PK
+W raildefs%s		raildefs.ads		raildefs.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+W unchecked_conversion%s
+W unsigned_types%s	unsigned_types.ads	unsigned_types.ali
+
+D das08defs.ads		20150428202142 f4eded2f
+D interfac.ads		20120510125814 129923ea
+D raildefs.ads		20150428202242 57fdbce8
+D system.ads		20120510125846 6daf90c4
+D s-unstyp.ads		20120510125838 6ae15c76
+D unchconv.ads		20120510125846 ca2f9e18
+D unsigned_types.ads	20150428202504 ea348493
+X 1 das08defs.ads
+4K9*Das08defs 46l5 46e14
+8N4*Base_Address2 10r29 11r29 12r29 13r29
+10N4*AD_lo_Addr
+11N4*AD_hi_Addr
+12N4*CS_Addr
+13N4*PA_Addr
+16N4*One_Byte 36r32
+17N4*One_Bit
+18M9*Sound_bit 24r12 25r12
+20N4*Sound_on
+21N4*Sound_off
+23R9*Train_Sound 26e14 28r8 29r8 34r68
+24m7*Horn{18M9} 30r7
+25m7*Bell{18M9} 31r7
+34A9*Sound_Register(23R9)<3|25I9> 35r8 36r8 39r21 44r17
+38V13*Unsigned[6|20]{7|4M9}
+42V13*Unsigned_8_To_Sound_Register[6|20]{34A9}
+X 2 interfac.ads
+55M9*Unsigned_8
+X 3 raildefs.ads
+22K9*Raildefs 1|2w22 34r35 3|86e13
+25I9*Train_Idx<short_short_integer>
+26I12*Train_Id{25I9} 1|34r44
+X 6 unchconv.ads
+17+9 Source 1|39r11 43r11
+18+9 Target 1|40r7 44r7
+20v10*Unchecked_Conversion 1|1w6 38r29 42r49
+X 7 unsigned_types.ads
+3K9*Unsigned_Types 1|2w6 5r8 7|11e19
+4M9*Unsigned_8<2|55M9> 1|40r17 43r21
+

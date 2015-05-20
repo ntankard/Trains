@@ -1,0 +1,56 @@
+V "GNAT Lib v2012"
+A -gnatA
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnvnnnvnnvnnnnnnnnnnnnnn
+
+U sound_manager%b	sound_manager.adb	09b7b78a OO PK
+W das08defs%s		das08defs.ads		das08defs.ali
+W interfaces%s		interfac.ads		interfac.ali
+W io_ports%s		io_ports.adb		io_ports.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+W unsigned_types%s	unsigned_types.ads	unsigned_types.ali
+
+U sound_manager%s	sound_manager.ads	79be3da1 EE NE OO PK
+W raildefs%s		raildefs.ads		raildefs.ali
+
+D das08defs.ads		20150428202142 f4eded2f
+D interfac.ads		20120510125814 129923ea
+D io_ports.ads		20150428202222 841e5c76
+D raildefs.ads		20150428202242 57fdbce8
+D sound_manager.ads	20150429001718 2e438149
+D sound_manager.adb	20150429001718 bd330309
+D system.ads		20120510125846 6daf90c4
+D s-unstyp.ads		20120510125838 6ae15c76
+D unchconv.ads		20120510125846 ca2f9e18
+D unsigned_types.ads	20150428202504 ea348493
+X 1 das08defs.ads
+4K9*Das08defs 46e14 6|3w6 8r12 13r8 18r31 26r11 30r30
+13N4*PA_Addr 6|18r41 30r40
+18M9*Sound_bit
+24m7*Horn{18M9} 6|17m16 17r32
+25m7*Bell{18M9} 6|29m16 29r32
+34A9*Sound_Register(23R9)<4|25I9> 6|8r22
+38V13*Unsigned[9|20]{10|4M9} 6|18s49 30s48
+X 2 interfac.ads
+55M9*Unsigned_8
+X 3 io_ports.ads
+35K9*IO_Ports 56e13 6|1w6 18r7 30r6
+42U14*Write_IO_Port 6|18s16 30s15
+X 4 raildefs.ads
+22K9*Raildefs 86e13 5|1w6 4r31 7r31 6|10r31 23r31
+25I9*Train_Idx<short_short_integer>
+26I12*Train_Id{25I9} 5|4r40 7r40 6|10r40 23r40
+X 5 sound_manager.ads
+2K9*Sound_Manager 9l5 9e18 6|4b14 35l5 35t18
+4U14*Horn_sound 4>25 5>19 6|10b14 20l11 20t21
+4i25 T{4|26I12} 6|10b25 17r13 17r29
+5o19 Period{duration} 6|11b19
+7U14*Bell_sound 7>25 8>19 6|23b14 33l8 33t18
+7i25 T{4|26I12} 6|23b25 29r13 29r29
+8o19 Period{duration} 6|24b19
+X 6 sound_manager.adb
+8a3 AS_Reg{1|34A9} 17m6 17r22 18r58 29m6 29r22 30r57
+X 10 unsigned_types.ads
+3K9*Unsigned_Types 6|2w6 5r8 10|11e19
+4M9*Unsigned_8<2|55M9>
+

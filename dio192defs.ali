@@ -1,0 +1,103 @@
+V "GNAT Lib v2012"
+A -gnatA
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnvnnnnnnnnvnnnvnnvnnnnnnnnnnnnnn
+
+U dio192defs%s		dio192defs.ads		892a9cea EE OO PK
+W raildefs%s		raildefs.ads		raildefs.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+W unchecked_conversion%s
+W unsigned_types%s	unsigned_types.ads	unsigned_types.ali
+
+D dio192defs.ads	20150428202152 fecc3a89
+D interfac.ads		20120510125814 129923ea
+D raildefs.ads		20150428202242 57fdbce8
+D system.ads		20120510125846 6daf90c4
+D s-unstyp.ads		20120510125838 6ae15c76
+D unchconv.ads		20120510125846 ca2f9e18
+D unsigned_types.ads	20150428202504 ea348493
+X 1 dio192defs.ads
+27K9*Dio192defs 204l5 204e15
+52N4*Base_Address1 53r29 54r29 55r29 56r29 57r29 58r29 59r29 60r29
+53N4*Pa1_Addr 75r5
+54N4*Pb1_Addr 75r15
+55N4*Pc1_Addr 75r25
+56N4*Pctl1_Addr
+57N4*Qa1_Addr 75r35
+58N4*Qb1_Addr 75r45
+59N4*Qc1_Addr 75r55
+60N4*Qctl1_Addr
+62N4*Base_Address2 63r29 64r29 65r29 66r29 67r29 68r29 69r29 70r29
+63N4*Pa2_Addr 76r5
+64N4*Pb2_Addr 76r15
+65N4*Pc2_Addr 76r25
+66N4*Pctl2_Addr
+67N4*Qa2_Addr 76r35
+68N4*Qb2_Addr 76r45
+69N4*Qc2_Addr 76r55
+70N4*Qctl2_Addr
+74a4*Block_Addr(7|5M9)
+78N4*Base_Address3 79r29 80r29 81r29 82r29 83r29 84r29 85r29 86r29
+79N4*Pa3_Addr 95r15
+80N4*Pb3_Addr 92r25
+81N4*Pc3_Addr 95r25
+82N4*Pctl3_Addr
+83N4*Qa3_Addr 92r5
+84N4*Qb3_Addr 95r5
+85N4*Qc3_Addr 92r15
+86N4*Qctl3_Addr
+90I12*Turnout_Drive_Range{3|63I9} 91r41 94r41
+91a4*Turnout_Drive_Addr(7|5M9)
+94a4*Turnout_State_Addr(7|5M9)
+102m4*Top_Bit{7|4M9} 104r42 107r41 109r41
+103m4*Output_Init2{7|4M9} 104r52
+104m4*Output_Init1{7|4M9}
+106m4*Pctl3_Init2{7|4M9} 107r51
+107m4*Pctl3_Init1{7|4M9}
+108m4*Qctl3_Init2{7|4M9} 109r51
+109m4*Qctl3_Init1{7|4M9}
+112N4*One_Byte 130r32 152r40 167r41
+114m4*Off{3|29M9} 138r7 138r25
+118R9*Block_Nibble 122e14 123r8 124r8 128r59
+120m7*Blk_Cab{3|29M9} 125r7
+121e7*Blk_Pol{3|56E9} 126r7
+128A9*Block_Register(118R9)<3|34I9> 129r8 130r8 137r27 179r21 194r17
+137a4*Zero_Normal{128A9}
+146E9*Turnout_Drive_Bit 146e48 147r26 148r26 150r68
+146n31*Pull_St{146E9} 147r47 154r14
+146n40*Pull_Tu{146E9} 148r47
+147e4*Straighten{146E9}
+148e4*Turn{146E9}
+150A9*Turnout_Drive_Register(146E9)<3|63I9> 151r8 152r8 153r34 183r21 198r17
+153a4*Turnout_Drive_Init{150A9}
+164E9*Turnout_Status_Bit 164e50 165r69
+164n32*Busy{164E9}
+164n38*In_Position{164E9} 169r14
+165A9*Turnout_Status_Register(164E9)<3|63I9> 166r8 167r8 168r31 188r17 201r21
+168a4*All_In_Position{165A9}
+178V13*Unsigned[6|20]{7|4M9}
+182V13*Unsigned[6|20]{7|4M9}
+186V13*Unsigned_8_To_Turnout_Status_Register[6|20]{165A9}
+192V13*Unsigned_8_To_Block_Register[6|20]{128A9}
+196V13*Unsigned_8_To_Turnout_Drive_Register[6|20]{150A9}
+200V13*Unsigned[6|20]{7|4M9}
+X 2 interfac.ads
+55M9*Unsigned_8
+58M9*Unsigned_16
+X 3 raildefs.ads
+22K9*Raildefs 1|24w6 25r5 3|86e13
+29M9*Cab_Type 1|114r20 120r17
+34I9*Block_Idx<short_short_integer> 1|74r33 128r34
+56E9*Polarity_Type 1|121r17 3|58e19
+57n7*Normal_Pol{56E9} 1|138r11 138r29
+63I9*Turnout_Idx<short_short_integer> 1|90r35 150r41 165r42
+X 6 unchconv.ads
+17+9 Source 1|179r11 183r11 187r11 193r11 197r11 201r11
+18+9 Target 1|180r7 184r7 188r7 194r7 198r7 202r7
+20v10*Unchecked_Conversion 1|21w6 178r29 182r29 186r58 192r49 196r57 200r29
+X 7 unsigned_types.ads
+3K9*Unsigned_Types 1|22w6 29r8 7|11e19
+4M9*Unsigned_8<2|55M9> 1|102r25 103r28 104r28 106r27 107r27 108r27 109r27
+. 180r17 184r17 187r21 193r21 197r21 202r17
+5M9*Unsigned_16<2|58M9> 1|74r59 91r65 94r65
+

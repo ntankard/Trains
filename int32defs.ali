@@ -1,0 +1,59 @@
+V "GNAT Lib v2012"
+A -gnatA
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U int32defs%s		int32defs.ads		a84be135 NE OO PK
+W raildefs%s		raildefs.ads		raildefs.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+W unchecked_conversion%s
+W unsigned_types%s	unsigned_types.ads	unsigned_types.ali
+
+D int32defs.ads		20150428202208 dfad4756
+D interfac.ads		20120510125814 129923ea
+D raildefs.ads		20150428202242 57fdbce8
+D system.ads		20120510125846 6daf90c4
+D s-unstyp.ads		20120510125838 6ae15c76
+D unchconv.ads		20120510125846 ca2f9e18
+D unsigned_types.ads	20150428202504 ea348493
+X 1 int32defs.ads
+20K9*Int32defs 84l5 84e14
+24N4*One_Byte 68r33
+31N4*IRQ1
+32N4*IRQ2
+35N4*Base_Address1 36r29 37r29 38r29 39r29 40r29 41r29
+36N4*Pa1_Addr 53r5
+37N4*Pb1_Addr 53r15
+38N4*Qa1_Addr 53r25
+39N4*Qb1_Addr 53r35
+40N4*Pctl1_Addr
+41N4*Qctl1_Addr
+42N4*Base_Address2 43r29 44r29 45r29 46r29 47r29 48r29
+43N4*Pa2_Addr 53r45
+44N4*Pb2_Addr 53r55
+45N4*Qa2_Addr 53r65
+46N4*Qb2_Addr 53r75
+47N4*Pctl2_Addr
+48N4*Qctl2_Addr
+52a4*Sensor_Addr(7|5M9)
+66A9*Sensor_Register(3|50E9)<3|44I9> 67r8 68r8 69r23 77r21 82r17
+69a4*All_Off{66A9}
+76V13*Unsigned[6|20]{7|4M9}
+80V13*Unsigned_8_To_Sensor_Register[6|20]{66A9}
+X 2 interfac.ads
+55M9*Unsigned_8
+58M9*Unsigned_16
+X 3 raildefs.ads
+22K9*Raildefs 1|17w6 18r5 66r60 69r51 3|86e13
+44I9*Sensor_Idx<short_short_integer> 1|52r34 66r34
+50E9*Sensor_Bit 1|66r69 3|50e32
+50n24*Off{50E9} 1|69r60
+X 6 unchconv.ads
+17+9 Source 1|77r11 81r11
+18+9 Target 1|78r7 82r7
+20v10*Unchecked_Conversion 1|15w6 76r29 80r50
+X 7 unsigned_types.ads
+3K9*Unsigned_Types 1|16w6 22r8 7|11e19
+4M9*Unsigned_8<2|55M9> 1|78r17 81r21
+5M9*Unsigned_16<2|58M9> 1|52r60
+

@@ -1,0 +1,188 @@
+V "GNAT Lib v2012"
+A -gnatA
+P ZX
+R nnnnnnnnnnnnnnnnnnvnnvnvnvnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnvnnnvnnvnnnnnnnnnnnnnn
+
+U slogger%b		slogger.adb		6b494690 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W ada.text_io.integer_io%s
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W logger_ada%s		logger_ada.adb		logger_ada.ali  AD
+W unsigned_types%s	unsigned_types.ads	unsigned_types.ali
+
+U slogger%s		slogger.ads		6a46fca2 BD BN EE OO PK
+W ada.tags%s		a-tags.adb		a-tags.ali
+W logger_ada%s		logger_ada.adb		logger_ada.ali
+W raildefs%s		raildefs.ads		raildefs.ali
+W system%s		system.ads		system.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W unsigned_types%s	unsigned_types.ads	unsigned_types.ali
+
+D ada.ads		20120510125802 3ffc8e18
+D a-except.ads		20120510125752 ec1b44c1
+D a-finali.ads		20120510125752 52ecdc1b
+D a-inteio.ads		20120510125752 f64b89a4
+D a-ioexce.ads		20120510125752 8b9de6cd
+D a-reatim.ads		20120510125754 63f07669
+D a-stream.ads		20120510125756 2ca4ee37
+D a-tags.ads		20120510125758 6c0509d0
+D a-textio.ads		20120510125800 386df5d4
+D a-tiinau.ads		20120510125800 8114c8e4
+D a-tiinio.ads		20120510125800 aa04e5d6
+D a-tiinio.adb		20120510125800 df9cd7af
+D a-unccon.ads		20120510125800 f9eb8f06
+D interfac.ads		20120510125814 129923ea
+D i-c.ads		20120510125814 5421119b
+D i-cstrin.ads		20120510125814 341d0ddf
+D i-cstrea.ads		20120510125814 1bd72c32
+D logger_ada.ads	20150428202228 52f590a4
+D raildefs.ads		20150428202242 57fdbce8
+D slogger.ads		20150428202348 857a547d
+D slogger.adb		20150428202346 af051d58
+D system.ads		20120510125846 6daf90c4
+D s-atacco.ads		20120510125818 4c36d12f
+D s-crtl.ads		20120510125824 ac77b159
+D s-exctab.ads		20120510125824 66e51330
+D s-ficobl.ads		20120510125824 443b9d66
+D s-finmas.ads		20120510125824 b95bb341
+D s-finroo.ads		20120510125824 4ff27390
+D s-multip.ads		20120510125828 38ac9f73
+D s-osinte.ads		20120510125828 ecf1fbfd
+D s-parame.ads		20120510125832 b6e20cc0
+D s-pooglo.ads		20120510125832 542f33d0
+D s-soflin.ads		20120510125832 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stausa.ads		20120510125834 017a0a05
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-stopoo.ads		20120510125834 7b8fbeee
+D s-tasinf.ads		20120510125836 859198ad
+D s-taspri.ads		20120510125836 196697f7
+D s-taprop.ads		20120510125834 1dd2e1b6
+D s-taskin.ads		20120510125836 5e24fb30
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+D s-wchcon.ads		20120510125840 bfeb2e3d
+D s-win32.ads		20120510125840 07238fa2
+D unsigned_types.ads	20150428202504 ea348493
+X 1 ada.ads
+16K9*Ada 19e8 21|33r6 34r6 35r6 39r24 40r23 41r24 46r9 49r11 66r10 70r10
+. 73r13
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[11|45] 21|35w10 41r28
+X 6 a-reatim.ads
+39K13*Real_Time 139e18 21|33w10 46r13 49r15 73r17
+41O9*Time 21|46r23
+46O9*Time_Span
+53V13*Clock{41O9} 21|50s37 73s27
+58V14*"-"{46O9} 21|50s43
+80V13*To_Duration{duration} 21|50s25
+X 9 a-textio.ads
+49K13*Text_IO 471e16 21|34w10 39r28 40r27 66r14 70r14
+166U14*New_Line 21|246s28
+242U14*Put 21|222s11 246s11
+263U14*Put_Line 21|66s22 70s22 144s14 185s14
+X 11 a-tiinio.ads
+45k21*Integer_IO 84e27 21|40r35
+75U14*Put 21|128s14[40] 136s11[4|18] 140s11[4|18] 166s11[40] 173s11[4|18]
+. 179s14[4|18]
+X 14 interfac.ads
+36K9*Interfaces 175e15 21|31r6 32r5 256r15
+55M9*Unsigned_8
+X 15 i-c.ads
+18K20*C 230e17 21|31w17 32r16 256r26
+35I9*int<integer> 21|77r27 79r11 96r25 113r56 139r22 143r43 152r22 160r11
+. 177r15 184r43 216r16 238r10 256r28 293r24 309r13
+X 18 logger_ada.ads
+51K9*Logger_Ada 111e15 20|47w6 73r41 21|30w6 61r20 69r10 143r10 184r10 204r19
+. 211r41 219r10 261r26 265r35 279r7
+59E9*Log_Device 59e72 20|73r52 21|61r31 211r52
+59n51*Log_Disk{59E9} 21|204r30
+67V13*Logger_Init{15|35I9} 21|69s21
+70i4*MAX_BYTES_TO_READ{15|35I9} 21|265r46
+92V13*Logger_Manual_Call{15|35I9} 21|261s37
+100V13*Logger_Direct_Call{15|35I9} 21|143s21 184s21
+108U14*Logger_Close 21|219s21 279s18
+X 19 raildefs.ads
+22K9*Raildefs 86e13 20|49w6 90r41 21|153r22 303r41
+79A9*Four_Registers(48|4M9)<integer> 20|90r50 21|153r31 303r50
+X 20 slogger.ads
+51K9*Slogger 100l5 100e12 21|37b14 317l5 317t12
+53b4*On{boolean} 21|145m10 186m10 290r10 305r10
+65X4*Slogger_Error 21|263r22
+67U14*Initialize 70r19 21|200b14 205l8 205t18 316s4
+72U14*Initialize 73>25 74>25 21|204s7 210b14 248l8 248t18
+73e25 Device{18|59E9} 21|211b25 226r21
+74b25 Use_Buffer{boolean} 21|212b25 226r29 231r25
+79U14*Send_Event 80>26 81>26 82>26 84r19 21|285b14 295l8 295t18
+80e26 Operation{character} 21|286b26 293r13
+81i26 Id{integer} 21|287b26 293r28
+82m26 Val{48|4M9} 21|288b26 293r34
+87U14*Send_Event 88>26 89>26 90>26 21|300b14 312l8 312t18
+88e26 Operation{character} 21|301b26 308r13
+89i26 Id{integer} 21|302b26 309r17
+90a26 Values{19|79A9} 21|303b26 310r13
+94U14*Flush 21|253b14 269l8 269t13 278s7
+97U14*Finalize 21|274b14 280l8 280t16
+X 21 slogger.adb
+39K12 DIO=39:28 144r10 185r10 222r7 246r7 246r24
+40K12 LIO[11|45] 128r10 166r7
+41K12 IIO=41:28 136r7 140r7 173r7 179r10
+43I12 HWTime{long_integer} 48r31 52r14 92r35 111r56 150r22
+44i4 HWClock_Frequency{integer} 52r21 238r15
+46o4 T0{6|41O9} 50r45 73m7
+48V13 Get_HWTime{43I12} 48b13 53l8 53t18 243s10 292s13 307s14
+50o7 Now{duration} 52r39
+55N4 BUFF_LENGTH 117r21 157r21
+60U14 Slogger_Init 60b14 61>7 62>7 74l8 74t20 226s7
+61e7 Log_Device{18|59E9} 69r33
+62b7 Use_Buffer{boolean} 65r10
+77V13 Width_For{natural} 77b13 77>23 90l8 90t17 96s15 135s12 139s12 172s12
+. 178s15
+77i23 V{15|35I9} 79r18 81r10 82r16
+78i7 W{natural} 83m10 86m10 86r15 89r14
+79i7 X{15|35I9} 82m10 85r13 87m10 87r15
+92V13 Width_For{natural} 92b13 92>23 108l8 108t17 127s15 165s12
+92i23 Timestamp{43I12} 95r10 96r29 97r13 99r13 101r13
+93i7 W{natural} 96m10 98m10 100m10 102m10 104m10 107r14
+110U14 Slogger_Send_Event_One_Object 110b14 111>41 112>41 113>41 114>41 147l8
+. 147t37 236s7 242s7 291s10
+111i41 Timestamp{43I12} 123r10 127r25 128r29
+112e41 C_Op1{character} 132r20
+113i41 Id1{15|35I9} 135r22 136r42
+114m41 Val1{48|4M9} 139r26 140r42
+117a7 S{string} 122m7 124m10 128m18 128r18 131m7 132m7 133m7 136m15 136r15
+. 137m7 140m15 140r15 141m7 143r40
+118i7 Next{natural} 130m7 131r9 132r9 133r9 134m7 134r15 136r17 136r23 137r9
+. 138m7 138r15 140r17 140r23 141r9 143r47
+119i7 W{natural} 125m10 127m10 128r23 130r15 135m7 136r28 137r14 138r22 139m7
+. 140r28 141r14 143r52
+149U14 Slogger_Send_Event_With_Array 149b14 150>7 151>7 152>7 153>7 188l8
+. 188t37 306s10
+150i7 Timestamp{43I12} 165r22 166r26
+151e7 C_Op1{character} 169r20
+152i7 Id1{15|35I9} 172r22 173r42
+153a7 Values{19|79A9} 176r16 177r19
+157a7 S{string} 164m7 166m15 166r15 168m7 169m7 170m7 173m15 173r15 174m7
+. 179m18 179r18 180m10 184r40
+158i7 Next{natural} 167m7 168r9 169r9 170r9 171m7 171r15 173r17 173r23 174r9
+. 175m7 175r15 179r20 179r26 180r12 181m10 181r18 184r47
+159i7 W{natural} 165m7 166r20 167r15 172m7 173r28 174r14 175r22 178m10 179r31
+. 180r17 181r25
+160i7 V{15|35I9} 177m10 178r25 179r45
+176i11 I{integer} 177r26
+194b4 Initialized{boolean} 218r10 230m7
+195b4 Using_Membuffer{boolean} 231m7 259r10
+256i7 Count{15|35I9} 261m17 262r16 265r27
+X 48 unsigned_types.ads
+3K9*Unsigned_Types 20|48w6 82r41 21|27w6 114r55 288r41 48|11e19
+4M9*Unsigned_8<14|55M9> 20|82r56 21|114r70 288r56
+

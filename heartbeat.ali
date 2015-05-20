@@ -1,0 +1,112 @@
+V "GNAT Lib v2012"
+A -gnatA
+P ZX
+R nnnnnnnvnvnnnnnnnnvnnvnvnvnnnnnnnnnnnnnnnnnnvnnnnnnvnnnnnnvnnnnvnnnvnnvnnnnnnnv1nnnnnn
+
+U heartbeat%b		heartbeat.adb		ea6e9fa2 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W command_def%s		command_def.ads		command_def.ali
+W raildefs%s		raildefs.ads		raildefs.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+W train_command%s	train_command.adb	train_command.ali  AD
+
+U heartbeat%s		heartbeat.ads		b8aa5d21 EE OO PK
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20120510125802 3ffc8e18
+D a-calend.ads		20120510125748 d86d6c8c
+D a-caldel.ads		20120510125748 9f20b83d
+D a-except.ads		20120510125752 ec1b44c1
+D a-finali.ads		20120510125752 52ecdc1b
+D a-inteio.ads		20120510125752 f64b89a4
+D a-ioexce.ads		20120510125752 8b9de6cd
+D a-reatim.ads		20120510125754 63f07669
+D a-stream.ads		20120510125756 2ca4ee37
+D a-tags.ads		20120510125758 6c0509d0
+D a-textio.ads		20120510125800 386df5d4
+D a-tiinio.ads		20120510125800 aa04e5d6
+D a-unccon.ads		20120510125800 f9eb8f06
+D command_def.ads	20150520041412 ace8c4b2
+D heartbeat.ads		20150517191528 b8aa5d21
+D heartbeat.adb		20150520041632 0ff2a4da
+D interfac.ads		20120510125814 129923ea
+D i-c.ads		20120510125814 5421119b
+D i-cstrin.ads		20120510125814 341d0ddf
+D i-cstrea.ads		20120510125814 1bd72c32
+D raildefs.ads		20150428202242 57fdbce8
+D system.ads		20120510125846 6daf90c4
+D s-atacco.ads		20120510125818 4c36d12f
+D s-crtl.ads		20120510125824 ac77b159
+D s-exctab.ads		20120510125824 66e51330
+D s-ficobl.ads		20120510125824 443b9d66
+D s-finmas.ads		20120510125824 b95bb341
+D s-finroo.ads		20120510125824 4ff27390
+D s-multip.ads		20120510125828 38ac9f73
+D s-osinte.ads		20120510125828 ecf1fbfd
+D s-parame.ads		20120510125832 b6e20cc0
+D s-pooglo.ads		20120510125832 542f33d0
+D s-soflin.ads		20120510125832 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stausa.ads		20120510125834 017a0a05
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-stopoo.ads		20120510125834 7b8fbeee
+D s-tasinf.ads		20120510125836 859198ad
+D s-taspri.ads		20120510125836 196697f7
+D s-taprop.ads		20120510125834 1dd2e1b6
+D s-taskin.ads		20120510125836 5e24fb30
+D s-tassta.ads		20120510125836 3a253871
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+D s-wchcon.ads		20120510125840 bfeb2e3d
+D s-win32.ads		20120510125840 07238fa2
+D train_command.ads	20150520041622 b0680eff
+D unsigned_types.ads	20150428202504 ea348493
+X 1 ada.ads
+16K9*Ada 19e8 16|3r6 5r6 5r19 10r11 28r25
+X 2 a-calend.ads
+36K13*Calendar 375e17 16|3w10 10r15
+38I9*Time 16|11r21
+52V13*Clock{38I9} 16|11s29
+94V14*"+"{38I9} 16|22s35
+X 6 a-inteio.ads
+18K13*Integer_Text_IO[12|45] 16|5w23
+X 11 a-textio.ads
+49K13*Text_IO 471e16 16|5w10 28r29
+263U14*Put_Line 16|28s37
+X 14 command_def.ads
+2K9*command_def 36e16 16|2w6 9r11
+22n46*HeartPulse{22E7} 16|14r36
+24R9*Command_Type 35e17 16|14r16
+24e22*Eve{22E7} 16|14m31
+X 15 heartbeat.ads
+1K9*Heartbeat 5l5 5e14 16|6b14 30l5 30t14
+2t9*tick 16|8b14 29l8 29t12
+X 16 heartbeat.adb
+11i7 Future_time{2|38I9} 22m10 22r23 23r22
+12o7 wait_time{duration} 22r37
+13i7 train_to_call{positive} 19r46 20m10 20r27
+14r7 Command{14|24R9} 19r61
+X 21 raildefs.ads
+22K9*Raildefs 16|4w6 19r28 20r46 21|86e13
+24N4*Max_Trains 16|20r55
+25I9*Train_Idx<short_short_integer>
+26I12*Train_Id{25I9} 16|19r37
+X 49 train_command.ads
+3K9*Train_command 16|1w6 19r10 49|10e18
+6U14*add 16|19s24
+

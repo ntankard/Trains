@@ -1,0 +1,62 @@
+V "GNAT Lib v2012"
+A -gnatA
+P ZX
+R nnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U raildefs%s		raildefs.ads		bdc9387b NE OO PK
+W unsigned_types%s	unsigned_types.ads	unsigned_types.ali
+
+D interfac.ads		20120510125814 129923ea
+D raildefs.ads		20150428202242 57fdbce8
+D system.ads		20120510125846 6daf90c4
+D unsigned_types.ads	20150428202504 ea348493
+X 1 interfac.ads
+55M9*Unsigned_8
+X 2 raildefs.ads
+22K9*Raildefs 86l5 86e13
+24N4*Max_Trains 25r33 26r43 30r40 31r37
+25I9*Train_Idx<short_short_integer> 26r24 27r23
+26I12*Train_Id{25I9}
+27i4*No_Train{25I9}
+29M9*Cab_Type 30r22 31r22
+30M12*Dac_Id{29M9}
+31M12*Pwn_Id{29M9}
+33N4*Num_Blocks 34r31 35r43
+34I9*Block_Idx<short_short_integer> 35r24 36r24
+35I12*Block_Id{34I9}
+36i4*No_Block{34I9}
+38N4*Num_Crossings 39r34 40r49
+39I9*Crossing_Idx<short_short_integer> 40r27 41r27
+40I12*Crossing_Id{39I9}
+41i4*No_Crossing{39I9}
+43N4*Num_Sensors 44r34 45r45
+44I9*Sensor_Idx<short_short_integer> 45r25 46r25 83r20
+45I12*Sensor_Id{44I9} 54r38
+46i4*No_Sensor{44I9}
+50E9*Sensor_Bit 50e32 54r52
+50n24*Off{50E9}
+50n29*On{50E9}
+51b4*Sensor_On{boolean}
+52b4*Sensor_Off{boolean}
+54A9*Sensor_State_Array(50E9)<44I9>
+56E9*Polarity_Type 58e19 60r31 60r49
+57n7*Normal_Pol{56E9} 60r80
+58n7*Reverse_Pol{56E9} 60r67
+60a4*Opposite(56E9)
+62N4*Num_Turnouts 64r47
+63I9*Turnout_Idx<short_short_integer> 64r26 65r26
+64I12*Turnout_Id{63I9} 73r34
+65i4*No_Turnout{63I9}
+69E9*Turnout_Pos 72e18 73r49
+70n11*Straight{69E9}
+71n11*Turned{69E9}
+72n11*Middle{69E9}
+73A9*Tn_State_Array(69E9)<63I9>
+79A9*Four_Registers(4|4M9)<integer> 83r39
+82P9*Proc4_Access
+83i8 Offset{44I9}
+83a32 R{79A9}
+X 4 unsigned_types.ads
+3K9*Unsigned_Types 2|20w6 79r43 4|11e19
+4M9*Unsigned_8<1|55M9> 2|79r58
+

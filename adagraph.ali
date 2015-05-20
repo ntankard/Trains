@@ -1,0 +1,452 @@
+V "GNAT Lib v2012"
+A -gnatA
+P SS ZX
+R nnnnnnnnnnvnnnnnnnnnnvnnnnnnnnnnnnnnvnnnnvnnvnnnnnnnnvnnnnvnnnnvnnnvnnvnnnnnnnnnnnv1+nn
+
+U adagraph%b		adagraph.adb		00b1d196 OO PK
+W ada.exceptions%s	a-except.adb		a-except.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+L "-ladagraph"
+
+U adagraph%s		adagraph.ads		0b1102d2 EE OO PK
+W system%s		system.ads		system.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20120510125802 3ffc8e18
+D a-except.ads		20120510125752 ec1b44c1
+D a-unccon.ads		20120510125800 f9eb8f06
+D adagraph.ads		20150428202046 0b1102d2
+D adagraph.adb		20150428202044 5f81c2df
+D interfac.ads		20120510125814 129923ea
+D i-c.ads		20120510125814 5421119b
+D i-cstrin.ads		20120510125814 341d0ddf
+D system.ads		20120510125846 6daf90c4
+D s-atacco.ads		20120510125818 4c36d12f
+D s-exctab.ads		20120510125824 66e51330
+D s-multip.ads		20120510125828 38ac9f73
+D s-osinte.ads		20120510125828 ecf1fbfd
+D s-parame.ads		20120510125832 b6e20cc0
+D s-secsta.ads		20120510125832 eea35a36
+D s-soflin.ads		20120510125832 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stausa.ads		20120510125834 017a0a05
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-tasinf.ads		20120510125836 859198ad
+D s-taspri.ads		20120510125836 196697f7
+D s-taskin.ads		20120510125836 5e24fb30
+D s-taprob.ads		20120510125834 502249e3
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+D s-win32.ads		20120510125840 07238fa2
+X 4 adagraph.ads
+25K9*Adagraph 198l5 198e13 5|28b14 814l5 814t13
+31E9*Event_Type 31e78 35r15
+31n24*None{31E9} 5|548r49
+31n30*Moved{31E9} 5|549r49
+31n37*Left_Up{31E9} 5|550r49
+31n46*Left_Down{31E9} 5|552r49
+31n57*Right_Up{31E9} 5|551r49
+31n67*Right_Down{31E9} 5|553r49
+33R9*Mouse_Type 38e14 111r30 5|530r30 532r22
+35e7*Event{31E9} 5|548m40 549m40 550m40 551m40 552m40 553m40
+36i7*X_Pos{integer} 5|541m17 544m17
+37i7*Y_Pos{integer} 5|542m17 545m17
+40E9*Color_Type 42e59 118r37 120r50 122r53 125r27 128r27 132r25 136r27 139r54
+. 143r17 156r51 5|46r37 47r57 48r53 50r27 52r27 55r25 58r27 60r54 63r17 67r51
+. 77r37 125r17 138r27 152r25 166r27 180r27 191r51 213r54 222r50 223r11 253r53
+. 654r37 657r36 674r54 681r17 685r53 688r39 696r30 699r49 707r30 711r48 719r28
+. 723r49 731r30 735r52 742r54 745r40 754r20 757r57 796r51 799r37
+40n24*Black{40E9} 118r51 5|46r51 77r51 654r51
+40n31*Blue{40E9}
+40n37*Green{40E9}
+40n44*Cyan{40E9}
+40n50*Red{40E9}
+40n55*Magenta{40E9}
+40n64*Brown{40E9}
+41n7*Light_Gray{40E9}
+41n19*Dark_Gray{40E9}
+41n30*Light_Blue{40E9}
+41n42*Light_Green{40E9}
+42n7*Light_Cyan{40E9}
+42n19*Light_Red{40E9}
+42n30*Light_Magenta{40E9}
+42n45*Yellow{40E9}
+42n53*White{40E9} 122r67 125r41 128r41 132r39 136r41 139r68 143r31 156r65
+. 5|48r67 50r41 52r41 55r39 58r41 60r68 63r31 67r65 125r31 138r41 152r39
+. 166r41 180r41 191r65 213r68 253r67 685r67 696r44 707r44 719r42 731r44 742r68
+. 754r34 796r65
+44E9*Fill_Type 44e37 129r27 133r25 137r27 5|53r27 56r25 59r27 139r27 153r25
+. 167r27 708r30 711r70 720r28 723r71 732r30 735r74
+44n23*No_Fill{44E9} 129r41 133r39 137r41 5|53r41 56r39 59r41 139r41 153r39
+. 167r41 708r44 720r42 732r44
+44n32*Fill{44E9}
+51i4*Adagraph_Dll_Version{integer} 5|811r25
+58e4*Vk_Nul{character}
+59e4*Vk_Prior{character}
+60e4*Vk_Next{character}
+61e4*Vk_End{character}
+62e4*Vk_Home{character}
+63e4*Vk_Left{character}
+64e4*Vk_Up{character}
+65e4*Vk_Right{character}
+66e4*Vk_Down{character}
+67e4*Vk_Insert{character}
+68e4*Vk_Delete{character}
+75V13*Get_Dll_Version{integer} 5|472b13 480l8 480t23 811s7
+77U14*Get_Max_Size 77<28 77<36 5|483b14 495l8 495t20
+77i28 X_Size{integer} 5|483b28 493m7
+77i36 Y_Size{integer} 5|483b36 494m7
+84U14*Create_Graph_Window 84<35 84<43 85<7 85<15 5|86b14 93l8 93t27
+84i35 X_Max{integer} 5|87b7 92m7
+84i43 Y_Max{integer} 5|87b15 92m14
+85i7 X_Char{integer} 5|88b7 92m21
+85i15 Y_Char{integer} 5|88b15 92m29
+87U14*Ext_Create_Graph_Window 87<39 87<47 88<7 88<15 5|200b14 207l8 207t31
+87i39 X_Max{integer} 5|201b7 206m7
+87i47 Y_Max{integer} 5|201b15 206m14
+88i7 X_Char{integer} 5|202b7 206m21
+88i15 Y_Char{integer} 5|202b15 206m29
+90U14*Create_Sized_Graph_Window 90>41 90>49 91<7 91<15 92<7 92<15 5|99b14
+. 107l8 107t33
+90i41 X_Size{integer} 5|100b7 106r7
+90i49 Y_Size{integer} 5|100b15 106r15
+91i7 X_Max{integer} 5|101b7 106m23
+91i15 Y_Max{integer} 5|101b15 106m30
+92i7 X_Char{integer} 5|102b7 106m37
+92i15 Y_Char{integer} 5|102b15 106m45
+94U14*Destroy_Graph_Window 5|113b14 116l8 116t28
+96V13*Is_Open{boolean} 5|242b13 247l8 247t15
+98U14*Set_Window_Title 98>32 5|262b14 265l8 265t24
+98s32 Title{string} 5|262b32 264r30
+105V13*Key_Hit{boolean} 5|497b13 505l8 505t15
+107V13*Get_Key{character} 5|508b13 516l8 516t15
+109V13*Mouse_Event{boolean} 5|519b13 527l8 527t19
+111V13*Get_Mouse{33R9} 5|530b13 557l8 557t17
+118U14*Clear_Window 118>28 5|77b14 80l8 80t20
+118e28 Hue{40E9} 5|77b28 79r26
+120V13*Get_Pixel{40E9} 120>24 120>27 5|222b13 227l8 227t17
+120i24 X{integer} 5|222b24 225r23
+120i27 Y{integer} 5|222b27 225r26
+122U14*Put_Pixel 122>25 122>28 122>44 5|253b14 256l8 256t17
+122i25 X{integer} 5|253b25 255r23
+122i28 Y{integer} 5|253b28 255r26
+122e44 Hue{40E9} 5|253b44 255r29
+124U14*Draw_Line 124>25 124>29 124>33 124>37 125>7 5|178b14 185l8 185t17
+124i25 X1{integer} 5|179b7 184r7
+124i29 Y1{integer} 5|179b11 184r11
+124i33 X2{integer} 5|179b15 184r15
+124i37 Y2{integer} 5|179b19 184r19
+125e7 Hue{40E9} 5|180b7 184r23
+127U14*Draw_Box 127>24 127>28 127>32 127>36 128>7 129>7 5|136b14 144l8 144t16
+127i24 X1{integer} 5|137b7 143r7
+127i28 Y1{integer} 5|137b11 143r11
+127i32 X2{integer} 5|137b15 143r15
+127i36 Y2{integer} 5|137b19 143r19
+128e7 Hue{40E9} 5|138b7 143r23
+129e7 Filled{44E9} 5|139b7 143r28
+131U14*Draw_Circle 131>27 131>30 131>33 132>7 133>7 5|150b14 158l8 158t19
+131i27 X{integer} 5|151b7 157r7
+131i30 Y{integer} 5|151b10 157r10
+131i33 Radius{integer} 5|151b13 157r13
+132e7 Hue{40E9} 5|152b7 157r21
+133e7 Filled{44E9} 5|153b7 157r26
+135U14*Draw_Ellipse 135>28 135>32 135>36 135>40 136>7 137>7 5|164b14 172l8
+. 172t20
+135i28 X1{integer} 5|165b7 171r7
+135i32 Y1{integer} 5|165b11 171r11
+135i36 X2{integer} 5|165b15 171r15
+135i40 Y2{integer} 5|165b19 171r19
+136e7 Hue{40E9} 5|166b7 171r23
+137e7 Filled{44E9} 5|167b7 171r28
+139U14*Flood_Fill 139>26 139>29 139>45 5|213b14 216l8 216t18
+139i26 X{integer} 5|213b26 215r24
+139i29 Y{integer} 5|213b29 215r27
+139e45 Hue{40E9} 5|213b45 215r30
+141U14*Display_Text 141>28 141>31 142>7 143>7 5|122b14 130l8 130t20
+141i28 X{integer} 5|123b7 129r7
+141i31 Y{integer} 5|123b10 129r10
+142s7 Text{string} 5|124b7 129r13
+143e7 Hue{40E9} 5|125b7 129r19
+150V13*Where_X{integer} 5|271b13 276l8 276t15
+152V13*Where_Y{integer} 5|282b13 287l8 287t15
+154U14*Goto_Xy 154>23 154>26 5|233b14 236l8 236t15
+154i23 X{integer} 5|233b23 235r21
+154i26 Y{integer} 5|233b26 235r24
+156U14*Draw_To 156>23 156>26 156>42 5|191b14 194l8 194t15
+156i23 X{integer} 5|191b23 193r21
+156i26 Y{integer} 5|191b26 193r24
+156e42 Hue{40E9} 5|191b42 193r27
+163X4*Close_Handle_Failed 5|457r34
+164X4*Create_Event_Failed 5|432r34
+165X4*Create_Thread_Failed 5|433r34
+166X4*Dll_Version_Error 5|812r13
+167X4*Ellipse_Error 5|450r34
+168X4*Error_Copying_Cmdline 5|438r34
+169X4*Error_Copying_Title 5|437r34
+170X4*Error_Reading_Font 5|596r16 617r16 639r16
+171X4*Error_Reading_Size 5|591r16 612r16 634r16
+172X4*Fill_Rect_Error 5|441r34
+173X4*Flood_Fill_Error 5|452r34
+174X4*Get_Pixel_Error 5|451r34
+175X4*Get_Position_Error 5|456r34
+176X4*Invalid_Color_Value 5|435r34
+177X4*Invalid_Coordinate 5|436r34
+178X4*Invalid_Window_Size 5|455r34
+179X4*Invalidate_Rect_Error 5|442r34
+180X4*Line_To_Error 5|447r34
+181X4*Move_To_Error 5|446r34
+182X4*Mouse_Event_Error 5|554r39
+183X4*Rectangle_Error 5|449r34
+184X4*Select_Brush_Error 5|448r34
+185X4*Select_Pen_Error 5|445r34
+186X4*Set_Pixel_Error 5|444r34
+187X4*Set_Textcolor_Error 5|453r34
+188X4*Set_Title_Error 5|440r34
+189X4*Text_Out_Error 5|454r34
+190X4*Thread_Status_Error 5|458r34
+191X4*Unknown_Adagraph_Error 5|459r34 574r31
+192X4*Update_Window_Error 5|443r34
+193X4*Wait_Failed_Error 5|439r34
+194X4*Window_Already_Closed 5|431r34
+195X4*Window_Already_Open 5|430r34
+196X4*Window_Not_Open 5|434r34
+X 5 adagraph.adb
+35w11 Lock 79r7 91r7 105r7 115r7 128r7 142r7 156r7 170r7 183r7 193r7 205r7
+. 215r7 225r7 235r7 245r7 255r7 264r7 274r7 285r7 564b16 805l5 805t9
+36U14 Create_Graph_Window 36<35 36<43 37<7 37<15 91s12 580b14 598l8 598t27
+36i35 X_Max{integer} 580b35 588m7 590r11
+36i43 Y_Max{integer} 580b43 589m7 590r26
+37i7 X_Char{integer} 581b10 593m7 595r11
+37i15 Y_Char{integer} 581b18 594m7 595r27
+38U14 Ext_Create_Graph_Window 38<39 38<47 39<7 39<15 205s12 601b14 619l8
+. 619t31
+38i39 X_Max{integer} 601b39 609m7 611r10
+38i47 Y_Max{integer} 601b47 610m7 611r23
+39i7 X_Char{integer} 602b10 614m7 616r10
+39i15 Y_Char{integer} 602b18 615m7 616r24
+40U14 Create_Sized_Graph_Window 40>41 40>49 41<7 41<15 42<7 42<15 105s12
+. 622b14 641l8 641t33
+40i41 X_Size{integer} 622b41 627r47
+40i49 Y_Size{integer} 622b49 627r55
+41i7 X_Max{integer} 623b10 631m7 633r10
+41i15 Y_Max{integer} 623b18 632m7 633r23
+42i7 X_Char{integer} 624b10 636m7 638r10
+42i15 Y_Char{integer} 624b18 637m7 638r24
+43U14 Destroy_Graph_Window 115s12 644b14 651l8 651t28
+44U14 Is_Open 44<23 245s12 567b14 577l8 577t15
+44b23 Result{boolean} 567b23 572m25 573m25
+45U14 Set_Window_Title 45>32 264s12 664b14 671l8 671t24
+45s32 Title{string} 664b31 667r47
+46U14 Clear_Window 46>28 79s12 654b14 661l8 661t20
+46e28 Hue{4|40E9} 654b28 657r52
+47U14 Get_Pixel 47>25 47>28 47<44 225s12 674b14 682l8 682t17
+47i25 X{integer} 674b25 677r38
+47i28 Y{integer} 674b28 677r41
+47e44 Result{4|40E9} 674b41 681m7
+48U14 Put_Pixel 48>25 48>28 48>44 255s12 685b14 692l8 692t17
+48i25 X{integer} 685b25 688r33
+48i28 Y{integer} 685b28 688r36
+48e44 Hue{4|40E9} 685b44 688r55
+49U14 Draw_Line 49>25 49>29 49>33 49>37 50>7 183s12 695b14 703l8 703t17
+49i25 X1{integer} 695b25 699r33
+49i29 Y1{integer} 695b29 699r37
+49i33 X2{integer} 695b33 699r41
+49i37 Y2{integer} 695b37 699r45
+50e7 Hue{4|40E9} 696b10 699r65
+51U14 Draw_Box 51>24 51>28 51>32 51>36 52>7 53>7 142s12 706b14 715l8 715t16
+51i24 X1{integer} 706b24 711r32
+51i28 Y1{integer} 706b28 711r36
+51i32 X2{integer} 706b32 711r40
+51i36 Y2{integer} 706b36 711r44
+52e7 Hue{4|40E9} 707b10 711r64
+53e7 Filled{4|44E9} 708b10 711r85
+54U14 Draw_Circle 54>27 54>30 54>33 55>7 56>7 156s12 718b14 727l8 727t19
+54i27 X{integer} 718b27 723r35
+54i30 Y{integer} 718b30 723r38
+54i33 Radius{integer} 718b33 723r41
+55e7 Hue{4|40E9} 719b10 723r65
+56e7 Filled{4|44E9} 720b10 723r86
+57U14 Draw_Ellipse 57>28 57>32 57>36 57>40 58>7 59>7 170s12 730b14 739l8
+. 739t20
+57i28 X1{integer} 730b28 735r36
+57i32 Y1{integer} 730b32 735r40
+57i36 X2{integer} 730b36 735r44
+57i40 Y2{integer} 730b40 735r48
+58e7 Hue{4|40E9} 731b10 735r68
+59e7 Filled{4|44E9} 732b10 735r89
+60U14 Flood_Fill 60>26 60>29 60>45 215s12 742b14 749l8 749t18
+60i26 X{integer} 742b26 745r34
+60i29 Y{integer} 742b29 745r37
+60e45 Hue{4|40E9} 742b45 745r56
+61U14 Display_Text 61>28 61>31 62>7 63>7 128s12 752b14 761l8 761t20
+61i28 X{integer} 752b28 757r36
+61i31 Y{integer} 752b31 757r39
+62s7 Text{string} 753b10 757r50
+63e7 Hue{4|40E9} 754b10 757r73
+64U14 Where_X 64<23 274s12 764b14 772l8 772t15
+64i23 Result{integer} 764b23 771m7
+65U14 Where_Y 65<23 285s12 775b14 783l8 783t15
+65i23 Result{integer} 775b23 782m7
+66U14 Goto_Xy 66>23 66>26 235s12 786b14 793l8 793t15
+66i23 X{integer} 786b23 789r31
+66i26 Y{integer} 786b26 789r34
+67U14 Draw_To 67>23 67>26 67>42 193s12 796b14 803l8 803t15
+67i23 X{integer} 796b23 799r31
+67i26 Y{integer} 796b26 799r34
+67e42 Hue{4|40E9} 796b42 799r53
+223e7 C{4|40E9} 225m29 225r29 226r14
+243b7 Op{boolean} 245m20 245r20 246r14
+272i7 X{integer} 274m20 274r20 275r14
+283i7 Y{integer} 285m20 285r20 286r14
+300K12 C=300:33 389r37 404r49 667r39 757r42
+306i4 No_Errors{integer} 428r18 476r25 490r25 501r25 512r25 523r25 537r25
+. 585r25 606r25 628r25 648r25 658r25 668r25 678r25 689r25 700r25 712r25 724r25
+. 736r25 746r25 758r25 768r25 779r25 790r25 800r25
+307i4 Default_Window{integer} 584r42
+308i4 Mousenone{integer} 540r28 548r15
+309i4 Mousemove{integer} 549r15
+310i4 Maximized_Window{integer} 605r41
+311i4 Mouseleftup{integer} 550r15
+312i4 Mouserightup{integer} 551r15
+313i4 Mouseleftdown{integer} 552r15
+314i4 Mouserightdown{integer} 553r15
+320R9 Mouseeventstruct 325e14 326r26 328r46 533r30
+322i7*Event{integer} 540r20 547r22
+323i7*Xpos{integer} 544r36
+324i7*Ypos{integer} 545r36
+328P9 Mouseeventstructaccess(320R9) 329r26 341r31 534r22
+331P9 Integer_Access(integer) 332r26 407r32 486r22 487r22
+338V13 Mouseevent{integer} 339b<c,MouseEvent>22 522s23
+341V13 Getmouse{integer} 341>23 342b<c,GetMouse>22 536s23
+341p23 Event{328P9}
+344V13 Getkey{integer} 345b<c,GetKey>22 511s23
+347V13 Keyhit{integer} 348b<c,KeyHit>22 500s23
+350V13 Isopen{integer} 351b<c,IsOpen>22 571s12
+353V13 Getfontwidth{integer} 354b<c,GetFontWidth>22 593s26 614s26 636s26
+356V13 Getfontheight{integer} 357b<c,GetFontHeight>22 594s26 615s26 637s26
+359V13 Getdllversion{integer} 360b<c,GetDLLVersion>22 475s23
+362V13 Getwindowwidth{integer} 363b<c,GetWindowWidth>22 588s25 609s25 631s25
+365V13 Getwindowheight{integer} 366b<c,GetWindowHeight>22 589s25 610s25 632s25
+368V13 Creategraphwindow{integer} 368>32 369b<c,CreateGraphWindow>22 584s23
+. 605s23
+368i32 Size{integer}
+371V13 Createsizedgraphwindow{integer} 371>37 371>40 372b<c,CreateSizedGraphWindow>22
+. 627s23
+371i37 X{integer}
+371i40 Y{integer}
+374V13 Destroygraphwindow{integer} 375b<c,DestroyGraphWindow>22 647s23
+377V13 Clearwindow{integer} 377>26 378b<c,ClearWindow>22 657s23
+377i26 Hue{integer}
+380V13 Getcolorpixel{integer} 380>28 380>31 381b<c,GetColorPixel>22 677s23
+380i28 X{integer}
+380i31 Y{integer}
+383V13 Putpixel{integer} 383>23 383>26 383>29 384b<c,PutPixel>22 688s23
+383i23 X{integer}
+383i26 Y{integer}
+383i29 Hue{integer}
+386V13 Fillflood{integer} 386>24 386>27 386>30 387b<c,FillFlood>22 745s23
+386i24 X{integer}
+386i27 Y{integer}
+386i30 Hue{integer}
+389V13 Setwindowtitle{integer} 389>29 390b<c,SetWindowTitle>22 667s23
+389a29 Title{7|79A9}
+392V13 Drawline{integer} 392>23 392>27 392>31 392>35 392>39 393b<c,DrawLine>22
+. 699s23
+392i23 X1{integer}
+392i27 Y1{integer}
+392i31 X2{integer}
+392i35 Y2{integer}
+392i39 Hue{integer}
+395V13 Drawbox{integer} 395>22 395>26 395>30 395>34 395>38 395>43 396b<c,DrawBox>22
+. 711s23
+395i22 X1{integer}
+395i26 Y1{integer}
+395i30 X2{integer}
+395i34 Y2{integer}
+395i38 Hue{integer}
+395i43 Filled{integer}
+398V13 Drawcircle{integer} 398>25 398>28 398>31 398>39 398>44 399b<c,DrawCircle>22
+. 723s23
+398i25 X{integer}
+398i28 Y{integer}
+398i31 Radius{integer}
+398i39 Hue{integer}
+398i44 Filled{integer}
+401V13 Drawellipse{integer} 401>26 401>30 401>34 401>38 401>42 401>47 402b<c,DrawEllipse>22
+. 735s23
+401i26 X1{integer}
+401i30 Y1{integer}
+401i34 X2{integer}
+401i38 Y2{integer}
+401i42 Hue{integer}
+401i47 Filled{integer}
+404V13 Displaytext{integer} 404>26 404>29 404>42 404>63 405b<c,DisplayText>22
+. 757s23
+404i26 X{integer}
+404i29 Y{integer}
+404a42 Text{7|79A9}
+404i63 Hue{integer}
+407V13 Getmaxsize{integer} 407>25 407>28 408b<c,GetMaxSize>22 489s23
+407p25 X{331P9}
+407p28 Y{331P9}
+410V13 Wherex{integer} 411b<c,WhereX>22 767s23
+413V13 Wherey{integer} 414b<c,WhereY>22 778s23
+416V13 Gotoxy{integer} 416>21 416>24 417b<c,GotoXY>22 789s23
+416i21 X{integer}
+416i24 Y{integer}
+419V13 Drawto{integer} 419>21 419>24 419>27 420b<c,DrawTo>22 799s23
+419i21 X{integer}
+419i24 Y{integer}
+419i27 Hue{integer}
+426U14 Make_Exception 426b14 426>30 462l8 462t22 477s10 491s10 502s10 513s10
+. 524s10 538s10 586s10 607s10 629s10 649s10 659s10 669s10 679s10 690s10 701s10
+. 713s10 725s10 737s10 747s10 759s10 769s10 780s10 791s10 801s10
+426i30 Error{integer} 428r10 429r15
+473i7 Return_Value{integer} 475m7 476r10 477r26 479r14
+484i7 X{integer} 486m40 486r40 493r17
+484i10 Y{integer} 487m40 487r40 494r17
+485i7 Return_Value{integer} 489m7 490r10 491r26
+486p7 X_Access{331P9} 489r35
+487p7 Y_Access{331P9} 489r45
+498i7 Return_Value{integer} 500m7 501r10 502r26 504r14
+509i7 Return_Value{integer} 511m7 512r10 513r26 515r29
+520i7 Return_Value{integer} 522m7 523r10 524r26 526r14
+531i7 Return_Value{integer} 536m7 537r10 538r26
+532r7 Result{4|33R9} 541m10 542m10 544m10 545m10 548m33 549m33 550m33 551m33
+. 552m33 553m33 556r14
+533r7 The_Mouse{320R9} 534m48 534r48 540r10 544r26 545r26 547r12
+534p7 Our_Mouse{328P9} 536r33
+582i7 Return_Value{integer} 584m7 585r10 586r26
+603i7 Return_Value{integer} 605m7 606r10 607r26
+625i7 Return_Value{integer} 627m7 628r10 629r26
+645i7 Return_Value{integer} 647m7 648r10 649r26
+655i7 Return_Value{integer} 657m7 658r10 659r26
+665i7 Return_Value{integer} 667m7 668r10 669r26
+675i7 Return_Value{integer} 677m7 678r10 679r26 681r33
+686i7 Return_Value{integer} 688m7 689r10 690r26
+697i7 Return_Value{integer} 699m7 700r10 701r26
+709i7 Return_Value{integer} 711m7 712r10 713r26
+721i7 Return_Value{integer} 723m7 724r10 725r26
+733i7 Return_Value{integer} 735m7 736r10 737r26
+743i7 Return_Value{integer} 745m7 746r10 747r26
+755i7 Return_Value{integer} 757m7 758r10 759r26
+765i7 Return_Value{integer} 767m7 768r10 769r26 771r17
+776i7 Return_Value{integer} 778m7 779r10 780r26 782r17
+787i7 Return_Value{integer} 789m7 790r10 791r26
+797i7 Return_Value{integer} 799m7 800r10 801r26
+X 6 interfac.ads
+36K9*Interfaces 5|26r6 300r22 6|175e15
+X 7 i-c.ads
+18K20*C 5|26w17 300r33 7|230e17
+72E9*char<character>
+79A9*char_array(72E9)<60M9> 5|389r39 404r51
+84V13*To_C{79A9} 5|667s41 757s44
+

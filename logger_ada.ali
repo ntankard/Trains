@@ -1,0 +1,100 @@
+V "GNAT Lib v2012"
+A -gnatA
+P ZX
+R nnnnnnnnnnnnnnnnnnvnnvnnnvnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnvnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U logger_ada%b		logger_ada.adb		3c011662 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U logger_ada%s		logger_ada.ads		6524f756 EE NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20120510125802 3ffc8e18
+D a-except.ads		20120510125752 ec1b44c1
+D a-finali.ads		20120510125752 52ecdc1b
+D a-ioexce.ads		20120510125752 8b9de6cd
+D a-reatim.ads		20120510125754 63f07669
+D a-stream.ads		20120510125756 2ca4ee37
+D a-tags.ads		20120510125758 6c0509d0
+D a-textio.ads		20120510125800 386df5d4
+D a-unccon.ads		20120510125800 f9eb8f06
+D interfac.ads		20120510125814 129923ea
+D i-c.ads		20120510125814 5421119b
+D i-cstrin.ads		20120510125814 341d0ddf
+D i-cstrea.ads		20120510125814 1bd72c32
+D logger_ada.ads	20150428202228 52f590a4
+D logger_ada.adb	20150428202228 56997312
+D system.ads		20120510125846 6daf90c4
+D s-atacco.ads		20120510125818 4c36d12f
+D s-crtl.ads		20120510125824 ac77b159
+D s-exctab.ads		20120510125824 66e51330
+D s-ficobl.ads		20120510125824 443b9d66
+D s-finmas.ads		20120510125824 b95bb341
+D s-finroo.ads		20120510125824 4ff27390
+D s-multip.ads		20120510125828 38ac9f73
+D s-osinte.ads		20120510125828 ecf1fbfd
+D s-parame.ads		20120510125832 b6e20cc0
+D s-pooglo.ads		20120510125832 542f33d0
+D s-soflin.ads		20120510125832 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stausa.ads		20120510125834 017a0a05
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-stopoo.ads		20120510125834 7b8fbeee
+D s-tasinf.ads		20120510125836 859198ad
+D s-taspri.ads		20120510125836 196697f7
+D s-taprop.ads		20120510125834 1dd2e1b6
+D s-taskin.ads		20120510125836 5e24fb30
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+D s-wchcon.ads		20120510125840 bfeb2e3d
+D s-win32.ads		20120510125840 07238fa2
+X 1 ada.ads
+16K9*Ada 19e8 14|47r6 81r24 15|15r6 17r13 29r7 29r56 41r7 52r23 82r7
+X 5 a-reatim.ads
+39K13*Real_Time 139e18 14|47w10 81r28 15|52r27
+46O9*Time_Span 14|81r38 15|52r37
+X 8 a-textio.ads
+49K13*Text_IO 471e16 15|15w10 17r17 29r11 29r60 41r11 82r11
+52P9*File_Type(369R9) 15|17r25
+53n32*Out_File{53E9} 15|29r68
+86U14*Create 15|29s19
+88e7 Mode{53E9} 15|29r50
+89s7 Name{string} 15|29r34
+98U14*Close 15|41s19
+259U14*Put_Line 15|82s19
+X 10 interfac.ads
+36K9*Interfaces 175e15 14|48r6 53r22
+X 11 i-c.ads
+18K20*C 230e17 14|48w17 53r33
+35I9*int<integer> 14|67r56 70r35 81r58 92r41 101r54 101r68 15|24r56 53r16
+. 65r41 78r28 79r16 87r19
+X 14 logger_ada.ads
+51K9*Logger_Ada 111l5 111e15 15|16b14 90l5 90t15
+53K12*C=53:33 67r54 70r33 81r56 92r39 101r52 101r66 15|24r54 53r14 65r39
+. 78r26 79r14 87r17
+59E9*Log_Device 59e72 60r8 67r35 15|24r35
+59n24*Log_Console{59E9} 60r24
+59n37*Log_Ethernet{59E9} 60r42
+59n51*Log_Disk{59E9} 60r61 15|26r17
+59n61*Log_Serial{59E9} 61r24
+67V13*Logger_Init{11|35I9} 67>26 15|24b13 31l8 31t19
+67e26 Dev{59E9} 15|24b26 26r10
+70i4*MAX_BYTES_TO_READ{11|35I9}
+79V13*Logger_Thread_Create{11|35I9} 81^8 15|51b13 59l8 59t28
+81p8 Period(5|46O9) 15|52b7
+92V13*Logger_Manual_Call{11|35I9} 15|65b13 70l8 70t26
+100V13*Logger_Direct_Call{11|35I9} 100>33 101>33 15|76b13 88l8 88t26
+100s33 Logger_Buffer{string} 15|77b7 83r10 83r24 83r47
+101i33 Nbytes{11|35I9} 15|78b7 83r75 84r14
+108U14*Logger_Close 15|38b14 45l8 45t20
+X 15 logger_ada.adb
+17p4 Output{8|52P9} 29m26 29r26 41m25 41r25 82r28
+18a4 Out_Name{string} 29r40
+

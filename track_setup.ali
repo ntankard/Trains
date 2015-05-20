@@ -1,0 +1,71 @@
+V "GNAT Lib v2012"
+A -gnatA
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnvnnvnnnnnnnnnnnnnn
+
+U track_setup%b		track_setup.adb		5d12f463 OO PK IL
+W block_driver%s	block_driver.adb	block_driver.ali
+W interfaces%s		interfac.ads		interfac.ali
+W raildefs%s		raildefs.ads		raildefs.ali
+W turnout_driver%s	turnout_driver.adb	turnout_driver.ali
+
+U track_setup%s		track_setup.ads		9033f136 EE NE OO PK IL
+
+D block_driver.ads	20150428202118 1eaf4848
+D dio192defs.ads	20150428202152 fecc3a89
+D interfac.ads		20120510125814 129923ea
+D raildefs.ads		20150428202242 57fdbce8
+D system.ads		20120510125846 6daf90c4
+D s-unstyp.ads		20120510125838 6ae15c76
+D track_setup.ads	20150428202440 9033f136
+D track_setup.adb	20150428202438 2d4000e2
+D turnout_driver.ads	20150428202458 a933f117
+D unchconv.ads		20120510125846 ca2f9e18
+D unsigned_types.ads	20150428202504 ea348493
+X 1 block_driver.ads
+3K9*Block_Driver 15e17 8|2w6 55r8 59r8 63r8 124r11 131r7 138r7
+7U14*Set_Cab 8|55s21 59s21 63s21
+13U14*Flip_Polarity 8|124s24 131s20 138s20
+X 4 raildefs.ads
+22K9*Raildefs 86e13 8|3w6 3r21
+29M9*Cab_Type 8|55r46 59r48 63r46
+34I9*Block_Idx<short_short_integer>
+35I12*Block_Id{34I9} 8|7r52 18r29 19r29 20r29 21r29 26r26 26r39 38r54 39r54
+. 42r53 43r53
+63I9*Turnout_Idx<short_short_integer>
+64I12*Turnout_Id{63I9} 8|8r54 11r52 12r52 13r52 14r52 30r53 31r53 32r53 33r53
+70n11*Straight{69E9} 8|76r45
+71n11*Turned{69E9} 8|96r45
+X 7 track_setup.ads
+1K9*track_setup 5l8 5e19 8|6b14 145l8 145t19
+2U12*oval_setup 8|67b14 89l8 89t18
+3U12*firgur8_setup 8|91b14 118l5 118t18
+4U14*flip 8|120b11 144l5 144t9
+X 8 track_setup.adb
+7A9 BlockArray(4|35I12)<integer> 18r14 26r13 37r25 41r29 46r17
+8A9 TurnoutArray(4|64I12)<integer> 10r13 29r14
+10a1 Oval_Turns{8A9}
+18a1 Oval_blocks{7A9} 54r16 55r30 130r13 131r34
+26a1 Fig8_blocks{7A9} 62r16 63r30 137r20 138r34
+29a1 Common_Turns{8A9} 75r16 76r29 95r17 96r29
+37a1 Common_and_Same_Blocks{7A9} 46r30
+41a1 Common_but_Reversed_Blocks{7A9} 46r55
+46a1 Common_Blocks=46:53{7A9} 58r15 59r30 123r16 124r38
+49E6 circuit 49e35 50r18
+49n18 None{49E6} 50r28 141r15
+49n24 Fig8{49E6} 117r27 135r12
+49n30 oval{49E6} 88r21 128r12
+50e1 currect_circuit{49E6} 88m2 117m9 127r12
+52U14 reset_track 52b14 65l11 65t22
+54i11 I{integer} 55r42
+58i10 I{integer} 59r44
+62i11 I{integer} 63r42
+75i11 I{integer} 76r42
+95i12 I{integer} 96r42
+123i11 I{integer} 124r52
+130i8 I{integer} 131r46
+137i15 I{integer} 138r46
+X 9 turnout_driver.ads
+3K9*Turnout_Driver 8|1w6 76r9 96r9 9|11e22
+6U14*Pull 8|76s24 96s24
+

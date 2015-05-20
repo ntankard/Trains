@@ -1,0 +1,220 @@
+V "GNAT Lib v2012"
+M P W=b
+A -gnatA
+P SS ZX
+R nnnnnnnnnvnnnnnnnnnnnnnvnvnnnnnnnnnnnnnvnvnnvnnnnnnnnnnnnnvnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U assignment5%b		assignment5.adb		f355ad7b NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W block_driver%s	block_driver.adb	block_driver.ali
+W command_def%s		command_def.ads		command_def.ali
+W dac_driver%s		dac_driver.adb		dac_driver.ali
+W dio192defs%s		dio192defs.ads		dio192defs.ali
+W halls2%s		halls2.adb		halls2.ali
+W int32defs%s		int32defs.ads		int32defs.ali
+W interrupt_hdlr%s	interrupt_hdlr.adb	interrupt_hdlr.ali
+W io_ports%s		io_ports.adb		io_ports.ali
+W raildefs%s		raildefs.ads		raildefs.ali
+W simrail2%s		simrail2.adb		simrail2.ali
+W slogger%s		slogger.adb		slogger.ali
+W sound_manager%s	sound_manager.adb	sound_manager.ali
+W swindows%s		swindows.adb		swindows.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W track_setup%s		track_setup.adb		track_setup.ali
+W train_manager%s	train_manager.adb	train_manager.ali
+W turnout_driver%s	turnout_driver.adb	turnout_driver.ali
+W unsigned_types%s	unsigned_types.ads	unsigned_types.ali
+
+D ada.ads		20120510125802 3ffc8e18
+D a-calend.ads		20120510125748 d86d6c8c
+D a-caldel.ads		20120510125748 9f20b83d
+D a-except.ads		20120510125752 ec1b44c1
+D a-finali.ads		20120510125752 52ecdc1b
+D a-inteio.ads		20120510125752 f64b89a4
+D a-ioexce.ads		20120510125752 8b9de6cd
+D a-reatim.ads		20120510125754 63f07669
+D a-stream.ads		20120510125756 2ca4ee37
+D a-tags.ads		20120510125758 6c0509d0
+D a-textio.ads		20120510125800 386df5d4
+D a-tiinio.ads		20120510125800 aa04e5d6
+D a-unccon.ads		20120510125800 f9eb8f06
+D assignment5.adb	20150520053948 79a6e632
+D block_driver.ads	20150428202118 1eaf4848
+D command_def.ads	20150520041412 ace8c4b2
+D dac_driver.ads	20150428202138 22bac6e9
+D dio192defs.ads	20150428202152 fecc3a89
+D halls2.ads		20150428202204 5308d55d
+D int32defs.ads		20150428202208 dfad4756
+D interfac.ads		20120510125814 129923ea
+D i-c.ads		20120510125814 5421119b
+D i-cstrin.ads		20120510125814 341d0ddf
+D i-cstrea.ads		20120510125814 1bd72c32
+D interrupt_hdlr.ads	20150428202214 493c907b
+D io_ports.ads		20150428202222 841e5c76
+D logger_ada.ads	20150428202228 52f590a4
+D raildefs.ads		20150428202242 57fdbce8
+D simrail2.ads		20150428202258 6c13e450
+D slogger.ads		20150428202348 857a547d
+D sound_manager.ads	20150429001718 2e438149
+D swindows.ads		20150428202406 a676c5b7
+D system.ads		20120510125846 6daf90c4
+D s-atacco.ads		20120510125818 4c36d12f
+D s-conca2.ads		20120510125822 fbd0f2fc
+D s-crtl.ads		20120510125824 ac77b159
+D s-exctab.ads		20120510125824 66e51330
+D s-ficobl.ads		20120510125824 443b9d66
+D s-finmas.ads		20120510125824 b95bb341
+D s-finroo.ads		20120510125824 4ff27390
+D s-multip.ads		20120510125828 38ac9f73
+D s-osinte.ads		20120510125828 ecf1fbfd
+D s-parame.ads		20120510125832 b6e20cc0
+D s-pooglo.ads		20120510125832 542f33d0
+D s-secsta.ads		20120510125832 eea35a36
+D s-soflin.ads		20120510125832 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stausa.ads		20120510125834 017a0a05
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-stopoo.ads		20120510125834 7b8fbeee
+D s-tasinf.ads		20120510125836 859198ad
+D s-taspri.ads		20120510125836 196697f7
+D s-taprop.ads		20120510125834 1dd2e1b6
+D s-taskin.ads		20120510125836 5e24fb30
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+D s-wchcon.ads		20120510125840 bfeb2e3d
+D s-win32.ads		20120510125840 07238fa2
+D track_setup.ads	20150428202440 9033f136
+D train_manager.ads	20150520053916 8ef6d52c
+D turnout_driver.ads	20150428202458 a933f117
+D unchconv.ads		20120510125846 ca2f9e18
+D unsigned_types.ads	20150428202504 ea348493
+X 1 ada.ads
+16K9*Ada 19e8 14|26r6 26r19 47r24 272r4
+X 6 a-inteio.ads
+18K13*Integer_Text_IO[12|45] 14|26w23 47r28
+X 11 a-textio.ads
+49K13*Text_IO 471e16 14|26w10 272r8
+263U14*Put_Line 14|272s16
+X 14 assignment5.adb
+45U11*Assignment5 45b11 285l5 285t16
+47K12 Iio=47:28
+49p4 W_In{32|19P9} 92r20 101r20 130r20 142r23 154r20 168r18 184r27 187r29
+. 198r20 199r20 267r17 274m19 274r19
+49p10 W_Info{32|19P9}
+49p18 W_Interrupts{32|19P9} 275m19 275r19 276r25
+58U12 Init_Dio 58b12 66l8 66t16 278s4
+77N4 Pos0 94r50 145r56 257r58
+78i4 Number{integer} 90r10 91r24 104m7 111r11 113r13 119m17 128r10 129r28
+. 157m7 163r10 164r32 171m8 176r12 176r30 180r46 182r44 190m7 257m16 257r26
+85U13 Dac_Command 85b13 105l8 105t19
+86e7 C{character} 92m26 92r26 93r13 94r45
+87m7 Dac{28|29M9} 91m10 95r37 97m13 100r10
+88m7 V{65|4M9} 94m13 95r42
+109U14 track_command 109b14 120l8 120t21 260s16
+123U12 block_Command 123b12 158l8 158t21
+124e7 C{character} 130m26 130r26 131r13 135r16 142m29 142r29 144r20 145r51
+125i7 Block{28|34I9} 129m10 133r39 136r39 138m13 141r13 146r40 148m18 153r10
+126m7 D{65|4M9} 145m19 146r56
+160U14 turnout_command 160b14 160>30 172l11 172t26
+160e30 Dir{28|69E9} 165r38
+161i9 turnout{28|64I12} 164m10 165r30
+174U14 sound_command 174b14 174>28 191l8 191t21
+174e28 sound_type{character} 177r15
+194U14 Dialog_Loop 194b14 269l8 269t19 283s4
+195e7 C{character} 199m26 199r26 200r15 257r53
+X 15 block_driver.ads
+3K9*Block_Driver 14|37w6 64r7 133r13 136r13 146r18 15|15e17
+5U14*Init 14|64s20
+7U14*Set_Cab 14|146s31
+10U14*Set_Polarity 14|133s26 136s26
+X 16 command_def.ads
+2K9*command_def 14|43w6 217r46 219r45 221r45 223r45 226r46 228r46 230r45
+. 232r45 235r44 237r44 239r44 242r44 244r44 246r44 249r44 251r44 253r44 16|36e16
+4n26*speed_up{4E9} 14|217r58 219r57 221r57 223r57
+4n36*slow_down{4E9} 14|226r58 228r58 230r57 232r57
+5n25*Left{5E9} 14|235r56 237r56 239r56
+5n31*Right{5E9} 14|242r56 244r56 246r56
+5n38*Center{5E9} 14|249r56 251r56 253r56
+X 17 dac_driver.ads
+3K9*Dac_Driver 14|36w6 62r9 95r13 17|9e18
+5U14*Init 14|62s20
+6U14*Set_Voltage 14|95s24
+X 18 dio192defs.ads
+27K9*Dio192defs 14|41w6 18|204e15
+X 19 halls2.ads
+13K9*Halls2 14|33w6 280r4 19|68e11
+16U14*Initialize 14|280s11
+X 20 int32defs.ads
+20K9*Int32defs 14|32w7 20|84e14
+X 21 interfac.ads
+55M9*Unsigned_8
+X 25 interrupt_hdlr.ads
+12K9*Interrupt_Hdlr 14|34w6 276r4 281r4 25|18e19
+14U14*Init 14|276s19
+16U14*Install 14|281s19
+X 26 io_ports.ads
+35K9*IO_Ports 14|28w6 26|56e13
+X 28 raildefs.ads
+22K9*Raildefs 14|31w6 31r52 203r51 205r50 207r50 210r50 212r50 214r50 28|86e13
+25I9*Train_Idx<short_short_integer>
+26I12*Train_Id{25I9} 14|180r37 182r35
+29M9*Cab_Type 14|87r13 146r47
+30M12*Dac_Id{29M9} 14|91r17
+33N4*Num_Blocks 14|128r23
+34I9*Block_Idx<short_short_integer> 14|125r15
+35I12*Block_Id{34I9} 14|129r19
+57n7*Normal_Pol{56E9} 14|133r46 203r60 205r59 207r59
+58n7*Reverse_Pol{56E9} 14|136r46 210r59 212r59 214r59
+62N4*Num_Turnouts 14|163r23
+63I9*Turnout_Idx<short_short_integer>
+64I12*Turnout_Id{63I9} 14|161r19 164r21
+69E9*Turnout_Pos 14|160r35 28|72e18
+X 29 simrail2.ads
+32K9*Simrail2 14|27w6 272r55 273r4 29|95e13
+52V13*Version{string} 14|272s64
+62U14*Reset 14|273s13
+63i10 N_Trains{positive} 14|273r20
+64i10 N_Carriages_Train_1{natural} 14|273r35
+X 30 slogger.ads
+51K9*Slogger 14|35w6 30|100e12
+X 31 sound_manager.ads
+2K9*Sound_Manager 14|39w6 180r12 182r10 31|9e18
+4U14*Horn_sound 14|180s26
+7U14*Bell_sound 14|182s24
+X 32 swindows.ads
+17K9*Swindows 14|29w6 29r52 49r33 274r4 275r4 32|90e13
+19P9*Window(88+9) 14|49r42
+27U14*Open 14|274s13 275s13
+39U14*Clear 14|267s10
+42U14*Put_Line 14|101s10 154s10 168s8 184s17 187s19 198s10
+61U14*Get_Char 14|92s10 130s10 142s13 199s10
+88+9*Window_Struct
+X 61 track_setup.ads
+1K9*track_setup 14|40w6 112r17 114r14 116r11 61|5e19
+2U12*oval_setup 14|112s29
+3U12*firgur8_setup 14|114s26
+4U14*flip 14|116s23
+X 62 train_manager.ads
+3K9*train_manager 14|42w6 65r7 203r18 205r17 207r17 210r17 212r17 214r17
+. 217r17 219r16 221r16 223r16 226r17 228r17 230r16 232r16 235r16 237r16 239r16
+. 242r16 244r16 246r16 249r16 251r16 253r16 62|12e18
+6U14*Init 14|65s21
+8U14*Change_Direction 14|203s32 205s31 207s31 210s31 212s31 214s31
+9U17*Change_Speed 14|217s31 219s30 221s30 223s30 226s31 228s31 230s30 232s30
+10U14*Change_Path 14|235s30 237s30 239s30 242s30 244s30 246s30 249s30 251s30
+. 253s30
+X 63 turnout_driver.ads
+3K9*Turnout_Driver 14|38w6 63r9 165r10 63|11e22
+5U14*Init 14|63s24
+6U14*Pull 14|165s25
+X 65 unsigned_types.ads
+3K9*Unsigned_Types 14|30w6 30r52 65|11e19
+4M9*Unsigned_8<21|55M9> 14|88r13 94r18 126r13 145r24
+

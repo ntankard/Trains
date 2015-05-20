@@ -1,0 +1,37 @@
+V "GNAT Lib v2012"
+A -gnatA
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U bounded_stack%b	bounded_stack.adb	a59c9043 NE OO PK GE
+
+U bounded_stack%s	bounded_stack.ads	41bd7c23 BN EE NE OO PK GE
+
+D bounded_stack.ads	20150428234228 41bd7c23
+D bounded_stack.adb	20150429000540 e421ec60
+D system.ads		20120510125846 6daf90c4
+X 1 bounded_stack.ads
+2+9 Element_Type 12r32 15r38 22r53 2|4r38 15r38
+3k9*Bounded_Stack 2z9 31l5 31e18 2|1b14 41l5 41t18
+5R9*Stack_Type 5d20 11r36 14r38 17r30 18r31 19r34 23c9 27e17 2|3r38 14r38
+. 25r30 31r31 36r34
+5i20 Max_Size{positive} 23r20 26r33 2|6r28 27r32
+7X4*Underflow 2|18r16
+8X4*Overflow 2|7r16
+11U14*EnStack 11=22 12>22 2|3b14 12l8 12t15
+11r22 Stack{5R9} 2|3b23 6r10 6r22 9m10 9r22 10m10 10r23
+12*22 Item{2+9} 2|4b23 9r36
+14U14*DeStack 14=23 15<23 2|14b14 23l8 23t15
+14r23 Stack{5R9} 2|14b23 17r10 20m11 20r24 21r18 21r30
+15*23 Item{2+9} 2|15b23 21m10
+17V13*Full{boolean} 17>19 2|25b13 28l8 28t12
+17r19 Stack{5R9} 2|25b19 27r14 27r26
+18V13*Empty{boolean} 18>20 2|31b13 34l8 34t13
+18r20 Stack{5R9} 2|31b20 33r14
+19V13*get_Count{natural} 19>23 2|36b13 39l8 39t17
+19r23 Stack{5R9} 2|36b23 38r15
+22A9 Stack_Array(2+9)<integer> 26r18
+25i10 top{positive} 2|6r16 9r28 10m16 10r29 17r16 20m17 20r30 21r36 27r20
+. 33r20 38r21
+26a10 Items{22A9} 2|9m16 21r24
+

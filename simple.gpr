@@ -1,0 +1,17 @@
+project Simple is
+
+   for Main use ("skel2.adb");
+   for Source_Files use ("Adagraph.adb", "Adagraph.ads", "dda06defs.ads", "dio192defs.ads", "halls2.adb", "halls2.ads", "int32defs.ads", "interrupt_hdlr.adb", "interrupt_hdlr.ads", "Io_ports.adb", "Io_ports.ads", "logger_ada.adb", 
+      "logger_ada.ads", "raildefs.ads", "simdefs2.ads", "simrail2-blockdriver_pkg.adb", "simrail2-relay_pkg.adb", "simrail2-segment_feature_pkg.adb", "simrail2-step.adb", "simrail2-test.adb", "simrail2-turnout_pkg.adb", "simrail2.adb", 
+      "simrail2.ads", "simtrack2-display.adb", "simtrack2-display.ads", "simtrack2.ads", "skel2.adb", "slogger.adb", "slogger.ads", "Swindows.adb", "Swindows.ads", "Unsigned_Types.ads");
+
+   package Pretty_Printer is
+      for Default_Switches ("ada") use ("-nM", "--no-separate-is", "--no-separate-loop-then", "-aL", "-c4", "--separate-stmt-name", "-l2");
+   end Pretty_Printer;
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-gnat95");
+   end Compiler;
+
+end Simple;
+
