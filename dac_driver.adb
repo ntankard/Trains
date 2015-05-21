@@ -1,38 +1,42 @@
-with Raildefs;       use Raildefs;
-with Unsigned_Types; use Unsigned_Types;
-with Dda06defs;      use Dda06defs;
-with IO_Ports;       use IO_Ports;
+
+with Dda06defs;
+with Io_Ports;
 
 package body Dac_Driver is
 
-   Three_Shift : constant := 8;
-   Five_Shift  : constant := 32;
-   Hi_Init     : constant := 2#00001000#;
+   type Dac_Reg_Array is array(Raildefs.Dac_Id) of Dda06defs.Da_Register;
 
-   ----------------------------------------------------------------------------
+   Dac_Regs : Dac_Reg_array;
 
-   procedure Init is
-   begin -- Init
-      for I in 1 .. Max_Trains loop
-         Set_Voltage (Dac_Id (I), 0);
-      end loop;
-   end Init;
+   procedure Set_Voltage (D : in Raildefs.Dac_Id;
+                          Value : in Unsigned_8)
+   is
+      use Raildefs, Dda06defs;
+      --hi, lo: Unsigned_8;
 
-   ----------------------------------------------------------------------------
+   begin
 
-   procedure Set_Voltage (D : in Dac_Id; Value : in Unsigned_8) is
+      -- hi:= (Value/32)+8;
+      --lo:= (Value*8);
 
-      hi : Unsigned_8;
-      lo : Unsigned_8;
+      --Io_ports.Write_Io_port(Dalo_Addr(D),lo);
+      --Io_ports.Write_Io_port(Dahi_Addr(D),hi);
 
-   begin -- Set_Voltage
+      Dac_Regs(D).lo :=(Value*8); -- remove top bits
+      Dac_Regs(D).hi :=(Value/32)+8; --remove bottom bits and  set constant bit
 
-      hi := (Value / Five_Shift) or Hi_Init; -- Right shift by 5
-      lo := Value * Three_Shift;   -- Left shift by 3
+      Io_ports.Write_Io_port(Dalo_Addr(D),Dac_Regs(D).lo);
+      Io_ports.Write_Io_port(Dahi_Addr(D),Dac_Regs(D).hi);
 
-      Write_IO_Port (Dalo_Addr (D), lo); -- must be first
-      Write_IO_Port (Dahi_Addr (D), hi);
 
    end Set_Voltage;
+
+   procedure Init is
+      begin
+      for I in 1..Raildefs.Max_Trains
+        loop
+         Set_voltage(Raildefs.Dac_Id(I),0);
+         end loop;
+        end Init;
 
 end Dac_Driver;
