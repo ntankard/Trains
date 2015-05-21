@@ -1,8 +1,0 @@
-pragma Source_File_Name_Project
-  (Spec_File_Name  => "*.ads",
-   Casing          => lowercase,
-   Dot_Replacement => "-");
-pragma Source_File_Name_Project
-  (Body_File_Name  => "*.adb",
-   Casing          => lowercase,
-   Dot_Replacement => "-");
