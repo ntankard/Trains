@@ -3,6 +3,7 @@ with command_def;
 with ada.Calendar;
 with raildefs;
 with Ada.Text_IO, Ada.Integer_Text_IO;--testing
+with Turnout_Driver;
 package body Heartbeat is
 
    Task body tick is
@@ -15,6 +16,8 @@ package body Heartbeat is
 
    begin
       loop
+
+         Turnout_Driver.Check_All;
 
          train_command.add(raildefs.Train_Id(train_to_call),Command);
          train_to_call:= (train_to_call) mod raildefs.Max_Trains +1;
