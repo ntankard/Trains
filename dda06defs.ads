@@ -50,11 +50,6 @@ package Dda06defs is
 
    subtype Dalo_Register is Unsigned_8;
    subtype Dahi_Register is Unsigned_8;
-   type Da_Register is
-      record
-         hi: Dahi_Register;
-         lo: Dalo_Register;
-      end record;
 
    -- the following function is unnecessary but here for consistency
    -- with other packages.  (This really is a "do nothing"!)
@@ -65,8 +60,5 @@ package Dda06defs is
 --   function Unsigned is new Unchecked_Conversion
 --      (   Source => Dahi_Register,
 --      Target => Unsigned_8);
-
-   --function Dalo_register(Value: in unsigned_8) return Dalo_register;
-   --function Dahi_register(Value: in unsigned_8) return Dahi_register;
 
 end Dda06defs;
