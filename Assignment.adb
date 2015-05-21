@@ -1,4 +1,4 @@
--- Assignment 5 for Real time programing train
+-- Assignment  for Real time programing train
 --
 -- enter commands into Swindows dialog box to have train perform tasks.
 --
@@ -42,7 +42,7 @@ with Dio192defs;
 with Train_manager;
 with command_def;
 
-procedure Assignment5 is
+procedure Assignment is
    --package Iio is new Ada.Text_Io.Integer_Io(Integer);
    package Iio renames Ada.Integer_Text_IO;
 
@@ -282,4 +282,4 @@ begin
 
    Dialog_Loop;
 
-end Assignment5;
+end Assignment;
