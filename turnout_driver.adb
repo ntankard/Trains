@@ -2,6 +2,7 @@ with Raildefs;       use Raildefs;
 with Unsigned_Types; use Unsigned_Types;
 with Dio192defs;     use Dio192defs;
 with IO_Ports;
+with Ada.Text_IO; use  Ada.Text_IO;
 
 package body Turnout_Driver is
 
@@ -136,10 +137,11 @@ package body Turnout_Driver is
 
       function Is_Busy (Tn : in Turnout_Id) return Boolean is
       begin -- Is_Busy
+         --Update_Status(Tn);
          if Busy_State (Tn) = Fixed then
-            return True;
-         else
             return False;
+         else
+            return True;
          end if;
       end Is_Busy;
 
