@@ -1,0 +1,10 @@
+project Skeleton is
+
+   for Main use ("Assignment5.adb");
+
+   package Pretty_Printer is
+      for Default_Switches ("ada") use ("-A0", "-A1", "-A2", "-A3", "-A4");
+   end Pretty_Printer;
+
+end Skeleton;
+
