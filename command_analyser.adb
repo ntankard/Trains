@@ -97,7 +97,6 @@ Package body Command_Analyser is
          topolog2.Check_Turnout_Info_Need(My.Front_sensor, Turnout_needed, Turnout);
 
       topolog2.Resume(My.Front_sensor,Turnout_preference(My, Turnout));
-      ada.Text_IO.Put_Line(My.Front_sensor.Next_Expected'Img);
       Assign_Ahead(my,me);
 
    end Resume;
