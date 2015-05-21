@@ -1,78 +1,83 @@
-with Dio192defs;
-with Io_Ports;
-with Unsigned_Types;
+with Raildefs;       use Raildefs;
+with Unsigned_Types; use Unsigned_Types;
+with Dio192defs;     use Dio192defs;
+with IO_Ports;
 
 package body Block_Driver is
 
-   type Block_Reg_Array is
-     array (Raildefs.Block_Idx range 0 .. 11) of Dio192defs.Block_Register;
-
+   type Block_Reg_Array is array (Block_Idx range 0 .. 11) of Block_Register;
    Block_Regs : Block_Reg_Array;
 
-   procedure Set_Cab (B : in Raildefs.Block_Id; Cab : in Raildefs.Cab_Type) is
-
-      use Raildefs, Dio192defs;
-      Index  : Raildefs.Block_Idx := (B - 1) / 2; -- 0..11
-      Nibble : Raildefs.Block_Idx := B mod 2;   -- note asymmetry for big-end
-                                                -- first
-   begin
-
-      Block_Regs(index)(Nibble).Blk_Cab:=Cab;
-      Io_Ports.Write_Io_Port (Block_Addr(Index),Unsigned ( Block_Regs(index)));
-
-
-
-   end Set_Cab;
-
-   procedure Set_Polarity(B   : in Raildefs.Block_Id;
-      			  Pol : in Raildefs.Polarity_Type) is
-   use Raildefs, Dio192defs;
-   Index  : Raildefs.Block_Idx := (B - 1) / 2; -- 0..11
-   Nibble : Raildefs.Block_Idx := B mod 2;   -- note asymmetry for big-end
-
-   begin
-
-      --A_byte(Nibble_No).Blk_Cab := Cab_type(Current_Train_Id);
-
-      Block_Regs(index)(Nibble).Blk_Pol:=Pol;
-      Io_Ports.Write_Io_Port (Block_Addr(Index), Unsigned (Block_Regs(index)));
-
-
-
-   end Set_Polarity;
-
-   procedure Flip_Polarity(B   : in Raildefs.Block_Id) is
-   use Raildefs, Dio192defs;
-   Index  : Raildefs.Block_Idx := (B - 1) / 2; -- 0..11
-   Nibble : Raildefs.Block_Idx := B mod 2;   -- note asymmetry for big-end
-   begin
-      Block_Regs(index)(Nibble).Blk_Pol:= Opposite(Block_Regs(index)(Nibble).Blk_Pol);
-      Io_Ports.Write_Io_Port (Block_Addr(Index), Unsigned (Block_Regs(index)));
-        end Flip_Polarity;
-
+   ----------------------------------------------------------------------------
 
    procedure Init is
-     use Dio192defs;
-   begin
+   begin -- Init
       -- init 24-bits output 4 times
-      Io_Ports.Write_Io_Port (Pctl1_Addr, Output_Init1);
-      Io_Ports.Write_Io_Port (Qctl1_Addr, Output_Init1);
-      Io_Ports.Write_Io_Port (Pctl2_Addr, Output_Init1);
-      Io_Ports.Write_Io_Port (Qctl2_Addr, Output_Init1);
+      IO_Ports.Write_IO_Port (Pctl1_Addr, Output_Init1);
+      IO_Ports.Write_IO_Port (Qctl1_Addr, Output_Init1);
+      IO_Ports.Write_IO_Port (Pctl2_Addr, Output_Init1);
+      IO_Ports.Write_IO_Port (Qctl2_Addr, Output_Init1);
 
-
-      for I in Block_Regs'range loop
+      for I in Block_Regs'Range loop
          Block_Regs (I) := Zero_Normal;
-         Io_Ports.Write_Io_Port (Block_Addr (I), Unsigned (Block_Regs (I)));
+         IO_Ports.Write_IO_Port (Block_Addr (I), Unsigned (Block_Regs (I)));
       end loop;
 
       -- finish initialisation, tristate on
-      Io_Ports.Write_Io_Port (Pctl1_Addr, Output_Init2);
-      Io_Ports.Write_Io_Port (Qctl1_Addr, Output_Init2);
-      Io_Ports.Write_Io_Port (Pctl2_Addr, Output_Init2);
-      Io_Ports.Write_Io_Port (Qctl2_Addr, Output_Init2);
-
+      IO_Ports.Write_IO_Port (Pctl1_Addr, Output_Init2);
+      IO_Ports.Write_IO_Port (Qctl1_Addr, Output_Init2);
+      IO_Ports.Write_IO_Port (Pctl2_Addr, Output_Init2);
+      IO_Ports.Write_IO_Port (Qctl2_Addr, Output_Init2);
 
    end Init;
+
+   ----------------------------------------------------------------------------
+
+   procedure Set_Cab (B : in Raildefs.Block_Id; Cab : in Raildefs.Cab_Type) is
+
+      Index  : Block_Idx := (B - 1) / 2; -- 0..11
+      Nibble : Block_Idx := B mod 2;   -- note asymmetry for big-end first
+
+   begin -- Set_Cab
+
+      Block_Regs (Index) (Nibble).Blk_Cab  := Cab;
+      IO_Ports.Write_IO_Port
+        (Block_Addr (Index),
+         Unsigned (Block_Regs (Index)));
+
+   end Set_Cab;
+
+   ----------------------------------------------------------------------------
+
+   procedure Set_Polarity (B : in Block_Id; Pol : in Polarity_Type) is
+
+      Index  : Block_Idx := (B - 1) / 2; -- 0..11
+      Nibble : Block_Idx := B mod 2;   -- note asymmetry for big-end
+
+   begin -- Set_Polarity
+
+      Block_Regs (Index) (Nibble).Blk_Pol  := Pol;
+      IO_Ports.Write_IO_Port
+        (Block_Addr (Index),
+         Unsigned (Block_Regs (Index)));
+
+   end Set_Polarity;
+
+   ----------------------------------------------------------------------------
+
+   procedure Flip_Polarity (B : in Block_Id) is
+
+      Index  : Block_Idx := (B - 1) / 2; -- 0..11
+      Nibble : Block_Idx := B mod 2;   -- note asymmetry for big-end
+
+   begin -- Flip_Polarity
+
+      Block_Regs (Index) (Nibble).Blk_Pol  :=
+        Opposite (Block_Regs (Index) (Nibble).Blk_Pol);
+      IO_Ports.Write_IO_Port
+        (Block_Addr (Index),
+         Unsigned (Block_Regs (Index)));
+
+   end Flip_Polarity;
 
 end Block_Driver;
