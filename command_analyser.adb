@@ -35,7 +35,7 @@ Package body Command_Analyser is
          end if;
 
       end case;
-      if(topolog2.Turnout_data(Turnout).Straight_Is_Left) then
+      if(My.Path_preference/=Center and then topolog2.Turnout_data(Turnout).Straight_Is_Left) then
          --these turnouts are flipped
          if(Turnout_Preference=Straight) then
             Turnout_Preference:=turned;
@@ -92,10 +92,12 @@ Package body Command_Analyser is
       Turnout_needed:Boolean;
       Turnout:raildefs.Turnout_Idx;
    begin
-     -- ada.Text_IO.Put_Line("resumeing");
+      ada.Text_IO.Put_Line("resumeing");
        My.Moving:= true;
          topolog2.Check_Turnout_Info_Need(My.Front_sensor, Turnout_needed, Turnout);
-      topolog2.Resume(My.Front_sensor,My.Turnout_preference);
+
+      topolog2.Resume(My.Front_sensor,Turnout_preference(My, Turnout));
+      ada.Text_IO.Put_Line(My.Front_sensor.Next_Expected'Img);
       Assign_Ahead(my,me);
 
    end Resume;
@@ -104,10 +106,11 @@ Package body Command_Analyser is
    use raildefs; --for /=
 unassign_block: Block_Id;
    begin
-
+	Ada.Text_IO.Put_Line("freeing blocks"&My.Back_sensor.Block_Num'img);
       while (My.owned_Blocks.get_Last /= My.Back_sensor.Block_Num) loop
          My.owned_Blocks.Remove(unassign_block);
          Rail_Element.Unassign_Block(unassign_block);
+         Ada.Text_IO.Put_Line(unassign_block'img);
       end loop; --free up blocks that are not needed any longer
 
       end Free_blocks;
@@ -182,7 +185,7 @@ use Ada.Calendar;
          Block_buffer_size:= Block_buffer_size-1;
       end loop;
 
-      free_blocks(My);
+      --free_blocks(My);
 
       Dac_driver.Set_Voltage(raildefs.Cab_Type(Me), My.Speed);  --done, so lets turn the train back on
       if(My.Speed>0) then
@@ -216,9 +219,10 @@ use Ada.Calendar;
 
    begin--front analyses
 --      Ada.Text_IO.Put_line(my.Speed'img);
-         Advance_Pos(My.Front_sensor,not My.Moving,Alerted,Turnout_Alert);
+
+Advance_Pos(My.Front_sensor,not My.Moving,Alerted,Turnout_Alert);
       if (Alerted) then
-         Advance_Pos(My.Front_sensor,not My.Moving,My.Turnout_preference);
+         Advance_Pos(My.Front_sensor,not My.Moving,Turnout_preference(My, Turnout_Alert));
       end if;
 
       Check_Entering_Turnout(Pos=>My.Front_sensor,
@@ -228,10 +232,10 @@ use Ada.Calendar;
                              Required_Setting=>Turnout_setting,
                              Chained=>Chained);
       if( Alerted) then
-         --Ada.Text_IO.Put("entereing turnout ");
-         --Ada.Integer_Text_IO.Put(Integer(Turnout_Alert_check));
+         Ada.Text_IO.Put("entereing turnout ");
+         Ada.Integer_Text_IO.Put(Integer(Turnout_Alert_check));
          if(Converging) then
-           -- Ada.Text_IO.Put("converging");
+            Ada.Text_IO.Put("converging");
 
             My.Turnout_preference:=Turnout_setting;
 
@@ -241,7 +245,7 @@ use Ada.Calendar;
             end if;
 
          else
-         --   Ada.Text_IO.Put(" not converging  ");
+            Ada.Text_IO.Put(" not converging  ");
             My.Turnout_preference:=Turnout_preference(My, Turnout_Alert_check);
          end if; --converging
 
@@ -254,7 +258,7 @@ use Ada.Calendar;
         -- Ada.Text_IO.Put_line("");
          if(Chained/=no) then
 
-          --  Ada.Text_IO.Put_Line("checking chain");
+            Ada.Text_IO.Put_Line("checking chain");
             Check_Entering_Chained_Turnout (Pos=>My.Front_sensor,
                                             Setting1        => My.Turnout_preference,
                                             Entering2       =>Alerted,
@@ -264,10 +268,10 @@ use Ada.Calendar;
                                             Entering_Crossing =>    Entering_Crossing,
                                             Which_Crossing    => Crossing_Alert);
             if(Alerted and then Chained = immediate) then
-              -- Ada.Text_IO.Put_Line("Chain");
-              -- Ada.Integer_Text_IO.Put(Integer(Turnout_Alert_check));
+              Ada.Text_IO.Put_Line("Chain");
+               Ada.Integer_Text_IO.Put(Integer(Turnout_Alert_check_chain));
                if(Converging) then
-             --     Ada.Text_IO.Put_line("converging");
+                  Ada.Text_IO.Put_line("converging");
 
                   My.Turnout_preference_chain:=Turnout_setting_chained;
 
@@ -277,7 +281,7 @@ use Ada.Calendar;
                  -- end if;
 
                else
-              --    Ada.Text_IO.Put_line(" not converging  ");
+                  Ada.Text_IO.Put_line(" not converging  ");
                   My.Turnout_preference_chain:=Turnout_preference(My, Turnout_Alert_check_chain);
                end if;--chain converging
 
@@ -376,6 +380,7 @@ use Ada.Calendar;
             Dac_Driver.Set_Voltage(Raildefs.Cab_Type(Me),My.Speed);
          end if;
       end if;
+
 
 
             Assign_Ahead(my,me);
@@ -663,6 +668,7 @@ use Ada.Calendar;
             recived_sensor:= Command.Sensor;
             recived_State:= Command.State;
 
+            --Ada.Text_IO.Put_line("front:"&My.Front_sensor.Next_Expected'img);
             --look if this sensor is of consern to this train
             if( Integer(recived_sensor) = Integer(My.Front_sensor.Next_Expected)) then
                --Ada.Text_IO.Put_line("just as expected-front");

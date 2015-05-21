@@ -17,7 +17,7 @@ package body turnout_Driver is
       for I in Turnout_drive_Array'range loop
          Turnout_drive_Array(I) := Turnout_Drive_Init;
          Io_Ports.Write_Io_Port(Turnout_Drive_Addr(I),
-      	 Unsigned(Turnout_drive_Array(I)));
+                                Unsigned(Turnout_drive_Array(I)));
       end loop;
    end Init;
 

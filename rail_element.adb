@@ -105,7 +105,8 @@ package body Rail_element is
       Current_Pos: raildefs.Turnout_Pos;
    begin
       Turnout_driver.poll(Turnout, State, Current_Pos);
-         return Current_Pos;
+      --ada.Text_IO.Put_Line(Turnout'Img &"is at"&Current_pos'img);
+      return Current_Pos;
    end Get_Turnout_pos;
 
 

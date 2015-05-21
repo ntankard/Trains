@@ -63,6 +63,7 @@ procedure Assignment is
 	Turnout_driver.init;
       Block_driver.init;
       Train_manager.Init;
+      track_setup.oval_setup;
    end Init_Dio;
 
 

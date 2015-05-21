@@ -2007,7 +2007,7 @@ package body Simrail2 is
             -- (3,0, 51,100.0, "Diesel    ")) );  -- north siding
             ((1,N_Carriages_Train_1,3,50.0,First_Name),
           (2,4,23,440.0,"Bill      "),
-          (4,0,25,100.0,"Trammie   "),     -- pre 2.1.8 was Toby
+          (4,2,62,200.0,"Trammie   "),     -- pre 2.1.8 was Toby
           (3,0, 7,20.0, "Diesel    ")) );  -- north siding
    end Reset;
    ----------------------------------------------------------------

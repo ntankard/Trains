@@ -48,7 +48,7 @@ Command_Buffer_array : array (Raildefs.Train_Id) of Buffers.Command_Buffer;
          --for testing. \/ \/
          --set to a train number that is in train_id to run
          --set to no_trian to disable
-      if Me = 0 then
+      if Me = 3 then
          case Command.Eve is
          when User_Input =>
             null;
@@ -146,17 +146,18 @@ use Raildefs; -- for compare
          Train_state_array(Train_id).Front_sensor:=Topolog2.Initialise_After(23);
          Train_state_array(Train_id).Back_sensor:=Topolog2.Initialise_After(23);
       when 3 =>
-         Train_state_array(Train_id).owned_Blocks.insert(19,Buffer_error);
+         Train_state_array(Train_id).owned_Blocks.insert(24,Buffer_error);
          if(Buffer_error) then Ada.text_io.Put_Line("Block Buffer Error"); end if;
 
-         Train_state_array(Train_id).Front_sensor:=Topolog2.Initialise_After(51);
-         Train_state_array(Train_id).Back_sensor:=Topolog2.Initialise_After(51);
+         Train_state_array(Train_id).Front_sensor:=Topolog2.Initialise_After(62);
+          Train_state_array(Train_id).Back_sensor:=Topolog2.Initialise_After(62);
+
       when 4 =>
          Train_state_array(Train_id).owned_Blocks.insert(1,Buffer_error);
           if(Buffer_error) then Ada.text_io.Put_Line("Block Buffer Error"); end if;
          Train_state_array(Train_id).Front_sensor:=Topolog2.Initialise_After(25);
          Train_state_array(Train_id).Back_sensor:=Topolog2.Initialise_After(25);
-         Train_state_array(Train_id).Speed:=160;
+         Train_state_array(Train_id).Speed:=0;--160;
       end case;
 
        Dac_Driver.Set_Voltage(Raildefs.Cab_Type(Train_id),Train_state_array(Train_id).Speed);
