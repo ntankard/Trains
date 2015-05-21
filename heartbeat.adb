@@ -1,12 +1,12 @@
 with Train_command;
-with command_Dec;
+with command_def;
 with ada.Calendar;
 with raildefs;
 with Ada.Text_IO, Ada.Integer_Text_IO;--testing
 package body Heartbeat is
 
    Task body tick is
-      use command_Dec;
+      use command_def;
       use ada.Calendar;
       Future_time : Time := Clock;
       wait_time:Duration:=0.25; --times four trains is one heart beat per second

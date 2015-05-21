@@ -1,5 +1,5 @@
 with Raildefs;
-package command_Dec is
+package command_def is
 
    type Speed_change is( speed_up, slow_down);
    type Path_change is (Left, Right, Center); --not the same as turned or stragith!!
@@ -33,4 +33,4 @@ package command_Dec is
                null;
          end case;
       end record;
-end command_Dec;
+end command_def;

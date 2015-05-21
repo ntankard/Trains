@@ -22,7 +22,7 @@ with
 use Raildefs;
 with Slogger;  --v2.2
 
-with Train;
+with Train_manager;
 
 
 
@@ -155,7 +155,7 @@ package body Interrupt_Hdlr is
                if Offset /=0 then
                	sensor_index:=sensor_index+32;
                end if;
-               Train.Recive_sensor_event(J + sensor_index,Value_sensor(J)); --inform
+               Train_manager.Recive_sensor_event(J + sensor_index,Value_sensor(J)); --inform
 
                Raildef_sensor_Array(I)(J):=Value_sensor(J);--change memory
             end if;

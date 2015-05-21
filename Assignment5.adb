@@ -39,8 +39,8 @@ with Turnout_Driver;
 with Sound_Manager;
 with track_setup;
 with Dio192defs;
-with Train;
-with command_Dec;
+with Train_manager;
+with command_def;
 
 procedure Assignment5 is
    --package Iio is new Ada.Text_Io.Integer_Io(Integer);
@@ -62,7 +62,7 @@ procedure Assignment5 is
 	dac_driver.Init;
 	Turnout_driver.init;
       Block_driver.init;
-      Train.Init;
+      Train_manager.Init;
    end Init_Dio;
 
 
@@ -200,57 +200,57 @@ procedure Assignment5 is
          case C is
 
            when 'q' =>
-                 Train.Change_Direction(1,Raildefs.Normal_Pol);
+                 Train_manager.Change_Direction(1,Raildefs.Normal_Pol);
             when 't' =>
-            	Train.Change_Direction(2,Raildefs.Normal_Pol);
+            	Train_manager.Change_Direction(2,Raildefs.Normal_Pol);
              when 'i' =>
-		Train.Change_Direction(3,Raildefs.Normal_Pol);
+		Train_manager.Change_Direction(3,Raildefs.Normal_Pol);
 
             when 'z' =>
-            	Train.Change_Direction(1,Raildefs.Reverse_Pol);
+            	Train_manager.Change_Direction(1,Raildefs.Reverse_Pol);
              when 'b' =>
-		Train.Change_Direction(2,Raildefs.Reverse_Pol);
+		Train_manager.Change_Direction(2,Raildefs.Reverse_Pol);
             when ',' =>
-            	Train.Change_Direction(3,Raildefs.Reverse_Pol);
+            	Train_manager.Change_Direction(3,Raildefs.Reverse_Pol);
 
             when 'w' =>
-            	Train.Change_speed(1,command_Dec.speed_up);
+            	Train_manager.Change_speed(1,command_def.speed_up);
             when 'y' =>
-               Train.Change_speed(2,command_Dec.speed_up);
+               Train_manager.Change_speed(2,command_def.speed_up);
             when 'o' =>
-               Train.Change_speed(3,command_Dec.speed_up);
+               Train_manager.Change_speed(3,command_def.speed_up);
             when '=' =>
-               Train.Change_speed(4,command_Dec.speed_up);
+               Train_manager.Change_speed(4,command_def.speed_up);
 
             when 'x' =>
-		Train.Change_speed(1,command_Dec.slow_down);
+		Train_manager.Change_speed(1,command_def.slow_down);
            when 'n' =>
-            	Train.Change_speed(2,command_Dec.slow_down);
+            	Train_manager.Change_speed(2,command_def.slow_down);
             when '.' =>
-               Train.Change_speed(3,command_Dec.slow_down);
+               Train_manager.Change_speed(3,command_def.slow_down);
             when '-' =>
-               Train.Change_speed(4,command_Dec.slow_down);
+               Train_manager.Change_speed(4,command_def.slow_down);
 
             when 'a' =>
-               Train.Change_Path(1,command_Dec.Left);
+               Train_manager.Change_Path(1,command_def.Left);
                 when 'g' =>
-               Train.Change_Path(2,command_Dec.Left);
+               Train_manager.Change_Path(2,command_def.Left);
                 when 'k' =>
-               Train.Change_Path(3,command_Dec.Left);
+               Train_manager.Change_Path(3,command_def.Left);
 
                when 'd' =>
-               Train.Change_Path(1,command_Dec.Right);
+               Train_manager.Change_Path(1,command_def.Right);
                 when 'j' =>
-               Train.Change_Path(2,command_Dec.Right);
+               Train_manager.Change_Path(2,command_def.Right);
                 when ';' =>
-               Train.Change_Path(3,command_Dec.Right);
+               Train_manager.Change_Path(3,command_def.Right);
 
                when 's' =>
-               Train.Change_Path(1,command_Dec.Center);
+               Train_manager.Change_Path(1,command_def.Center);
                 when 'h' =>
-               Train.Change_Path(2,command_Dec.Center);
+               Train_manager.Change_Path(2,command_def.Center);
                 when 'l' =>
-               Train.Change_Path(3,command_Dec.Center);
+               Train_manager.Change_Path(3,command_def.Center);
 
 
 when '0'..'9' =>

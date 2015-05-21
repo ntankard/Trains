@@ -7,7 +7,7 @@ with Command_Analyser;
 with Unsigned_Types;
 with train_state_dec;
 package body Train_command is
-use command_Dec;
+use command_def;
 
 
 Command_Buffer_presort_array : Buffers.Command_Buffer;
@@ -116,7 +116,7 @@ Command_Buffer_array : array (Raildefs.Train_Id) of Buffers.Command_Buffer;
 
 
    procedure add(Train:Raildefs.Train_IDx;
-                 Command: command_Dec.Command_Type) is
+                 Command: command_def.Command_Type) is
 use Raildefs; -- for compare
    begin --add_hall
 

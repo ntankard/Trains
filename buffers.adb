@@ -2,7 +2,7 @@ package body Buffers is
 
   protected  body Command_Buffer is --commands for trains, including interupts, heartbeats and user made
 
-      procedure insert(C : in command_Dec.Command_Type)
+      procedure insert(C : in command_def.Command_Type)
       is
       begin --Add
          if(not Has_Room) then
@@ -14,7 +14,7 @@ package body Buffers is
          end if;
       end insert;
 
-      entry Remove(C : out command_Dec.Command_Type; Error: out Boolean) when Has_Item
+      entry Remove(C : out command_def.Command_Type; Error: out Boolean) when Has_Item
       is
       begin --Remove
          Error:=Command_Buffer_full;

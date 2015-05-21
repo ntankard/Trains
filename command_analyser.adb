@@ -7,7 +7,7 @@ with Topolog2;
 with buffers;
 
 Package body Command_Analyser is
- use command_Dec;
+ use command_def;
  use Unsigned_Types;
 
 

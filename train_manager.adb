@@ -1,8 +1,7 @@
 with Train_command;
-with command_Dec;
 with Heartbeat;
-package body train is
-   use command_Dec;
+package body Train_manager is
+   use command_def;
 
 
 procedure Init is
@@ -32,7 +31,7 @@ procedure Init is
    end Change_Direction;
 
    procedure Change_Speed(Train: Raildefs.Train_Idx;
-                          Speed_change: command_Dec.Speed_change) is
+                          Speed_change: command_def.Speed_change) is
       Command: Command_Type;
       Input : User_input_record;
    begin
@@ -41,7 +40,7 @@ procedure Init is
       Train_command.add(Train,Command);
    end Change_Speed;
 
-   procedure Change_Path(Train: Raildefs.Train_Idx; Path_change:command_Dec.Path_change) is
+   procedure Change_Path(Train: Raildefs.Train_Idx; Path_change:command_def.Path_change) is
       Command: Command_Type;
       Input : User_input_record;
    begin
@@ -51,4 +50,4 @@ procedure Init is
    end Change_Path;
 
 
-end train;
+end Train_manager;

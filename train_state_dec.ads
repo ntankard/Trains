@@ -2,7 +2,7 @@ with Topolog2;
 with raildefs;
 with Unsigned_Types;
 with Buffers;
-with command_Dec;
+with command_def;
 package Train_state_dec is
 
    Abs_max_speed: Unsigned_Types.Unsigned_8:= 250;
@@ -13,7 +13,7 @@ package Train_state_dec is
 
  	owned_Blocks: Buffers.Block_Buffer;
 
-      Path_preference: command_Dec.Path_change ;
+      Path_preference: command_def.Path_change ;
 
 
       Speed: Unsigned_Types.Unsigned_8;
